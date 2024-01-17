@@ -1,4 +1,5 @@
 ﻿using Gestion_Casos.Casos;
+using Gestion_Casos.Parametros;
 using Guna.UI2.WinForms;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,7 @@ namespace Gestion_Casos.Parametros
         {
             btn.Refresh();
             btn.BackgroundImage = botonGrisImage;
+            btn.ForeColor = Color.Black;
         }
 
         public void EfectoLeave(Guna2GradientButton btn)
@@ -28,6 +30,7 @@ namespace Gestion_Casos.Parametros
             if (botonClickeado == null || btn != botonClickeado)
             {
                 btn.BackgroundImage = null;
+                btn.ForeColor = Color.White;
                 // Resto de tu código para otros botones...
             }
 
@@ -86,13 +89,14 @@ namespace Gestion_Casos.Parametros
         private void BtnUsuarios_Click(object sender, EventArgs e)
         {
             Reiniciar();
-            AbrirFromNieto(new FrmCasos());
+            AbrirFromNieto(new FrmUsuarios());
             if (botonClickeado != null)
             {
                 botonClickeado.BackgroundImage = null;
             }
             botonClickeado = BtnUsuarios;
             BtnUsuarios.BackgroundImage = botonGrisImage;
+            BtnUsuarios.ForeColor= Color.Black;
         }
 
         private void Parametros_Load(object sender, EventArgs e)
@@ -112,13 +116,18 @@ namespace Gestion_Casos.Parametros
 
         private void BtnInstituciones_Click(object sender, EventArgs e)
         {
+            Reiniciar();
+            AbrirFromNieto(new FrmInstituciones_());
             if (botonClickeado != null)
             {
                 botonClickeado.BackgroundImage = null;
             }
             botonClickeado = BtnInstituciones;
             BtnInstituciones.BackgroundImage = botonGrisImage;
+            BtnInstituciones.ForeColor = Color.Black;
         }
+
+
 
         private void BtnInstituciones_MouseHover(object sender, EventArgs e)
         {

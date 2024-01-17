@@ -378,7 +378,7 @@
             BtnAMenuHam.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             BtnAMenuHam.ForeColor = Color.Black;
             BtnAMenuHam.Image = Properties.Resources.menu_32px_grey;
-            BtnAMenuHam.Location = new Point(15, 9);
+            BtnAMenuHam.Location = new Point(20, 9);
             BtnAMenuHam.Name = "BtnAMenuHam";
             BtnAMenuHam.PressedColor = Color.Transparent;
             BtnAMenuHam.ShadowDecoration.CustomizableEdges = customizableEdges14;
@@ -801,7 +801,7 @@
             guna2Panel1.Dock = DockStyle.Top;
             guna2Panel1.Location = new Point(4, 0);
             guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.Padding = new Padding(15, 9, 0, 4);
+            guna2Panel1.Padding = new Padding(20, 9, 0, 4);
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges50;
             guna2Panel1.Size = new Size(282, 53);
             guna2Panel1.TabIndex = 14;
@@ -820,7 +820,7 @@
             PanelContenedor.FillColor = Color.FromArgb(41, 79, 116);
             PanelContenedor.Location = new Point(291, 45);
             PanelContenedor.Name = "PanelContenedor";
-            PanelContenedor.Padding = new Padding(8);
+            PanelContenedor.Padding = new Padding(3, 3, 2, 3);
             PanelContenedor.Radius = 10;
             PanelContenedor.ShadowColor = Color.FromArgb(41, 79, 116);
             PanelContenedor.ShadowShift = 3;
@@ -831,9 +831,9 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Image = Properties.Resources.Untitled;
-            pictureBox1.Location = new Point(250, 171);
+            pictureBox1.Location = new Point(245, 166);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(571, 308);
+            pictureBox1.Size = new Size(582, 318);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;

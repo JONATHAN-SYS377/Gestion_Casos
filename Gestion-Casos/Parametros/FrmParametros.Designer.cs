@@ -53,6 +53,9 @@
             // 
             // BarraMenu
             // 
+            BarraMenu.BackColor = Color.FromArgb(54, 54, 54);
+            BarraMenu.BackgroundImage = Properties.Resources.BarraTareas1;
+            BarraMenu.BackgroundImageLayout = ImageLayout.Stretch;
             BarraMenu.Controls.Add(Espaciador2);
             BarraMenu.Controls.Add(BtnInstituciones);
             BarraMenu.Controls.Add(Espaciador1);
@@ -68,6 +71,7 @@
             // 
             // Espaciador2
             // 
+            Espaciador2.BackColor = Color.Transparent;
             Espaciador2.CustomizableEdges = customizableEdges1;
             Espaciador2.Dock = DockStyle.Left;
             Espaciador2.Location = new Point(357, 5);
@@ -80,7 +84,9 @@
             // 
             BtnInstituciones.Animated = true;
             BtnInstituciones.AnimatedGIF = true;
+            BtnInstituciones.BackColor = Color.Transparent;
             BtnInstituciones.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnInstituciones.BorderRadius = 5;
             BtnInstituciones.CustomizableEdges = customizableEdges3;
             BtnInstituciones.DisabledState.BorderColor = Color.DarkGray;
             BtnInstituciones.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -113,6 +119,7 @@
             // 
             // Espaciador1
             // 
+            Espaciador1.BackColor = Color.Transparent;
             Espaciador1.CustomizableEdges = customizableEdges5;
             Espaciador1.Dock = DockStyle.Left;
             Espaciador1.Location = new Point(169, 5);
@@ -125,7 +132,9 @@
             // 
             BtnUsuarios.Animated = true;
             BtnUsuarios.AnimatedGIF = true;
+            BtnUsuarios.BackColor = Color.Transparent;
             BtnUsuarios.BackgroundImageLayout = ImageLayout.Stretch;
+            BtnUsuarios.BorderRadius = 5;
             BtnUsuarios.CustomizableEdges = customizableEdges7;
             BtnUsuarios.DisabledState.BorderColor = Color.DarkGray;
             BtnUsuarios.DisabledState.CustomBorderColor = Color.DarkGray;

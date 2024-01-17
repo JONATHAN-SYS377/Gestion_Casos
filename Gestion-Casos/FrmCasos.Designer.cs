@@ -320,6 +320,9 @@
             // 
             // BarraMenu
             // 
+            BarraMenu.BackColor = Color.Transparent;
+            BarraMenu.BackgroundImage = Properties.Resources.BarraTareas1;
+            BarraMenu.BackgroundImageLayout = ImageLayout.Stretch;
             BarraMenu.Controls.Add(BtnExportarExcell);
             BarraMenu.Controls.Add(guna2Panel1);
             BarraMenu.Controls.Add(BtnExportarPDF);
@@ -377,7 +380,6 @@
             BtnExportarExcell.ShadowDecoration.CustomizableEdges = customizableEdges98;
             BtnExportarExcell.Size = new Size(38, 34);
             BtnExportarExcell.TabIndex = 14;
-            BtnExportarExcell.Visible = false;
             // 
             // guna2Panel1
             // 
@@ -848,6 +850,7 @@
             // PanelPadreTab
             // 
             PanelPadreTab.AutoSize = true;
+            PanelPadreTab.BackColor = Color.FromArgb(41, 79, 116);
             PanelPadreTab.Controls.Add(PanelContenedorTabControl);
             PanelPadreTab.Controls.Add(TabControl);
             PanelPadreTab.CustomizableEdges = customizableEdges77;
@@ -928,11 +931,11 @@
             panelObservaciones.Controls.Add(TxtObservaciones);
             panelObservaciones.CustomizableEdges = customizableEdges5;
             panelObservaciones.Dock = DockStyle.Fill;
-            panelObservaciones.Location = new Point(0, 296);
+            panelObservaciones.Location = new Point(0, 227);
             panelObservaciones.Name = "panelObservaciones";
             panelObservaciones.Padding = new Padding(3, 0, 3, 0);
             panelObservaciones.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            panelObservaciones.Size = new Size(1045, 154);
+            panelObservaciones.Size = new Size(1045, 223);
             panelObservaciones.TabIndex = 15;
             // 
             // TxtObservaciones
@@ -958,7 +961,7 @@
             TxtObservaciones.ScrollBars = ScrollBars.Vertical;
             TxtObservaciones.SelectedText = "";
             TxtObservaciones.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            TxtObservaciones.Size = new Size(1039, 154);
+            TxtObservaciones.Size = new Size(1039, 223);
             TxtObservaciones.TabIndex = 3;
             // 
             // PanelTab2BotonesBoton
@@ -1100,7 +1103,7 @@
             guna2HtmlLabel20.BackColor = Color.White;
             guna2HtmlLabel20.Dock = DockStyle.Top;
             guna2HtmlLabel20.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel20.Location = new Point(0, 261);
+            guna2HtmlLabel20.Location = new Point(0, 192);
             guna2HtmlLabel20.Name = "guna2HtmlLabel20";
             guna2HtmlLabel20.Size = new Size(1045, 35);
             guna2HtmlLabel20.TabIndex = 13;
@@ -1129,7 +1132,7 @@
             PanelControlesPorEntregar.Location = new Point(0, 0);
             PanelControlesPorEntregar.Name = "PanelControlesPorEntregar";
             PanelControlesPorEntregar.ShadowDecoration.CustomizableEdges = customizableEdges30;
-            PanelControlesPorEntregar.Size = new Size(1045, 261);
+            PanelControlesPorEntregar.Size = new Size(1045, 192);
             PanelControlesPorEntregar.TabIndex = 12;
             // 
             // LblFechaEntregado
@@ -1137,7 +1140,7 @@
             LblFechaEntregado.BackColor = Color.Transparent;
             LblFechaEntregado.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LblFechaEntregado.ForeColor = Color.Red;
-            LblFechaEntregado.Location = new Point(25, 227);
+            LblFechaEntregado.Location = new Point(25, 156);
             LblFechaEntregado.Name = "LblFechaEntregado";
             LblFechaEntregado.Size = new Size(203, 22);
             LblFechaEntregado.TabIndex = 22;
@@ -1154,7 +1157,7 @@
             RadioTransferencia.CheckedState.InnerOffset = -4;
             RadioTransferencia.Font = new Font("Microsoft Sans Serif", 12F);
             RadioTransferencia.ForeColor = Color.White;
-            RadioTransferencia.Location = new Point(459, 176);
+            RadioTransferencia.Location = new Point(459, 105);
             RadioTransferencia.Name = "RadioTransferencia";
             RadioTransferencia.Size = new Size(124, 24);
             RadioTransferencia.TabIndex = 21;
@@ -1174,7 +1177,7 @@
             RadioCheque.CheckedState.InnerOffset = -4;
             RadioCheque.Font = new Font("Microsoft Sans Serif", 12F);
             RadioCheque.ForeColor = Color.White;
-            RadioCheque.Location = new Point(364, 176);
+            RadioCheque.Location = new Point(364, 105);
             RadioCheque.Name = "RadioCheque";
             RadioCheque.Size = new Size(83, 24);
             RadioCheque.TabIndex = 20;
@@ -1189,7 +1192,7 @@
             guna2HtmlLabel19.BackColor = Color.Transparent;
             guna2HtmlLabel19.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel19.ForeColor = Color.White;
-            guna2HtmlLabel19.Location = new Point(364, 149);
+            guna2HtmlLabel19.Location = new Point(364, 78);
             guna2HtmlLabel19.Name = "guna2HtmlLabel19";
             guna2HtmlLabel19.Size = new Size(96, 22);
             guna2HtmlLabel19.TabIndex = 19;
@@ -1212,7 +1215,7 @@
             CbTipoEntrega.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             CbTipoEntrega.ForeColor = Color.Black;
             CbTipoEntrega.ItemHeight = 30;
-            CbTipoEntrega.Location = new Point(25, 177);
+            CbTipoEntrega.Location = new Point(25, 106);
             CbTipoEntrega.Name = "CbTipoEntrega";
             CbTipoEntrega.ShadowDecoration.CustomizableEdges = customizableEdges20;
             CbTipoEntrega.Size = new Size(259, 36);
@@ -1223,7 +1226,7 @@
             guna2HtmlLabel16.BackColor = Color.Transparent;
             guna2HtmlLabel16.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel16.ForeColor = Color.White;
-            guna2HtmlLabel16.Location = new Point(27, 149);
+            guna2HtmlLabel16.Location = new Point(27, 78);
             guna2HtmlLabel16.Name = "guna2HtmlLabel16";
             guna2HtmlLabel16.Size = new Size(116, 22);
             guna2HtmlLabel16.TabIndex = 15;
@@ -1235,7 +1238,7 @@
             guna2HtmlLabel18.BackColor = Color.Transparent;
             guna2HtmlLabel18.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel18.ForeColor = Color.White;
-            guna2HtmlLabel18.Location = new Point(700, 77);
+            guna2HtmlLabel18.Location = new Point(777, 10);
             guna2HtmlLabel18.Name = "guna2HtmlLabel18";
             guna2HtmlLabel18.Size = new Size(128, 22);
             guna2HtmlLabel18.TabIndex = 13;
@@ -1255,14 +1258,14 @@
             TxtSegundoApellido.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             TxtSegundoApellido.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             TxtSegundoApellido.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtSegundoApellido.Location = new Point(700, 103);
+            TxtSegundoApellido.Location = new Point(777, 36);
             TxtSegundoApellido.Margin = new Padding(4);
             TxtSegundoApellido.Name = "TxtSegundoApellido";
             TxtSegundoApellido.PasswordChar = '\0';
             TxtSegundoApellido.PlaceholderText = "";
             TxtSegundoApellido.SelectedText = "";
             TxtSegundoApellido.ShadowDecoration.CustomizableEdges = customizableEdges22;
-            TxtSegundoApellido.Size = new Size(325, 35);
+            TxtSegundoApellido.Size = new Size(240, 35);
             TxtSegundoApellido.TabIndex = 14;
             // 
             // guna2HtmlLabel17
@@ -1270,7 +1273,7 @@
             guna2HtmlLabel17.BackColor = Color.Transparent;
             guna2HtmlLabel17.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel17.ForeColor = Color.White;
-            guna2HtmlLabel17.Location = new Point(364, 77);
+            guna2HtmlLabel17.Location = new Point(513, 10);
             guna2HtmlLabel17.Name = "guna2HtmlLabel17";
             guna2HtmlLabel17.Size = new Size(108, 22);
             guna2HtmlLabel17.TabIndex = 11;
@@ -1290,14 +1293,14 @@
             TxtPrimerApellido.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             TxtPrimerApellido.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             TxtPrimerApellido.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtPrimerApellido.Location = new Point(364, 103);
+            TxtPrimerApellido.Location = new Point(513, 36);
             TxtPrimerApellido.Margin = new Padding(4);
             TxtPrimerApellido.Name = "TxtPrimerApellido";
             TxtPrimerApellido.PasswordChar = '\0';
             TxtPrimerApellido.PlaceholderText = "";
             TxtPrimerApellido.SelectedText = "";
             TxtPrimerApellido.ShadowDecoration.CustomizableEdges = customizableEdges24;
-            TxtPrimerApellido.Size = new Size(325, 35);
+            TxtPrimerApellido.Size = new Size(240, 35);
             TxtPrimerApellido.TabIndex = 12;
             // 
             // guna2HtmlLabel9
@@ -1317,7 +1320,7 @@
             guna2HtmlLabel15.BackColor = Color.Transparent;
             guna2HtmlLabel15.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel15.ForeColor = Color.White;
-            guna2HtmlLabel15.Location = new Point(27, 77);
+            guna2HtmlLabel15.Location = new Point(250, 10);
             guna2HtmlLabel15.Name = "guna2HtmlLabel15";
             guna2HtmlLabel15.Size = new Size(59, 22);
             guna2HtmlLabel15.TabIndex = 3;
@@ -1337,14 +1340,14 @@
             TxtNombre.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             TxtNombre.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             TxtNombre.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtNombre.Location = new Point(27, 103);
+            TxtNombre.Location = new Point(250, 36);
             TxtNombre.Margin = new Padding(4);
             TxtNombre.Name = "TxtNombre";
             TxtNombre.PasswordChar = '\0';
             TxtNombre.PlaceholderText = "";
             TxtNombre.SelectedText = "";
             TxtNombre.ShadowDecoration.CustomizableEdges = customizableEdges26;
-            TxtNombre.Size = new Size(325, 35);
+            TxtNombre.Size = new Size(240, 35);
             TxtNombre.TabIndex = 9;
             // 
             // TxtCedula
@@ -1367,7 +1370,7 @@
             TxtCedula.PlaceholderText = "";
             TxtCedula.SelectedText = "";
             TxtCedula.ShadowDecoration.CustomizableEdges = customizableEdges28;
-            TxtCedula.Size = new Size(257, 35);
+            TxtCedula.Size = new Size(201, 35);
             TxtCedula.TabIndex = 8;
             // 
             // PanelRevision
@@ -2064,6 +2067,7 @@
             PanelDatosPrincipales.Controls.Add(guna2HtmlLabel1);
             PanelDatosPrincipales.CustomizableEdges = customizableEdges93;
             PanelDatosPrincipales.Dock = DockStyle.Top;
+            PanelDatosPrincipales.FillColor = Color.FromArgb(41, 79, 116);
             PanelDatosPrincipales.Location = new Point(0, 0);
             PanelDatosPrincipales.Name = "PanelDatosPrincipales";
             PanelDatosPrincipales.ShadowDecoration.CustomizableEdges = customizableEdges94;
@@ -2073,7 +2077,7 @@
             // CbAsignar
             // 
             CbAsignar.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            CbAsignar.BackColor = Color.Transparent;
+            CbAsignar.BackColor = Color.FromArgb(41, 79, 116);
             CbAsignar.BorderColor = Color.FromArgb(224, 224, 224);
             CbAsignar.BorderRadius = 10;
             CbAsignar.CustomizableEdges = customizableEdges79;
@@ -2108,7 +2112,7 @@
             // 
             // CbModoReceptivo
             // 
-            CbModoReceptivo.BackColor = Color.Transparent;
+            CbModoReceptivo.BackColor = Color.FromArgb(41, 79, 116);
             CbModoReceptivo.BorderColor = Color.FromArgb(224, 224, 224);
             CbModoReceptivo.BorderRadius = 10;
             CbModoReceptivo.CustomizableEdges = customizableEdges81;
@@ -2144,6 +2148,7 @@
             // TxtCircuito
             // 
             TxtCircuito.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            TxtCircuito.BackColor = Color.FromArgb(41, 79, 116);
             TxtCircuito.BorderRadius = 10;
             TxtCircuito.CustomizableEdges = customizableEdges83;
             TxtCircuito.DefaultText = "";
@@ -2181,6 +2186,7 @@
             // 
             // Txt
             // 
+            Txt.BackColor = Color.FromArgb(41, 79, 116);
             Txt.BorderRadius = 10;
             Txt.CustomizableEdges = customizableEdges85;
             Txt.DefaultText = "";
@@ -2219,6 +2225,7 @@
             // TxtCodigo
             // 
             TxtCodigo.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            TxtCodigo.BackColor = Color.FromArgb(41, 79, 116);
             TxtCodigo.BorderRadius = 10;
             TxtCodigo.CustomizableEdges = customizableEdges87;
             TxtCodigo.DefaultText = "";
@@ -2257,6 +2264,7 @@
             // DtpFecha
             // 
             DtpFecha.Animated = true;
+            DtpFecha.BackColor = Color.FromArgb(41, 79, 116);
             DtpFecha.BorderRadius = 10;
             DtpFecha.Checked = true;
             DtpFecha.CustomizableEdges = customizableEdges89;
@@ -2288,6 +2296,7 @@
             // 
             // TxtConsecutivo
             // 
+            TxtConsecutivo.BackColor = Color.FromArgb(41, 79, 116);
             TxtConsecutivo.BorderRadius = 10;
             TxtConsecutivo.CustomizableEdges = customizableEdges91;
             TxtConsecutivo.DefaultText = "";
