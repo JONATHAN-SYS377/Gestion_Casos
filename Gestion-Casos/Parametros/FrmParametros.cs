@@ -22,7 +22,7 @@ namespace Gestion_Casos.Parametros
         {
             btn.Refresh();
             btn.BackgroundImage = botonGrisImage;
-            btn.ForeColor = Color.Black;
+            btn.HoverState.ForeColor = Color.Black;
         }
 
         public void EfectoLeave(Guna2GradientButton btn)
@@ -30,7 +30,7 @@ namespace Gestion_Casos.Parametros
             if (botonClickeado == null || btn != botonClickeado)
             {
                 btn.BackgroundImage = null;
-                btn.ForeColor = Color.White;
+                btn.HoverState. ForeColor = Color.White;
                 // Resto de tu código para otros botones...
             }
 
@@ -96,7 +96,8 @@ namespace Gestion_Casos.Parametros
             }
             botonClickeado = BtnUsuarios;
             BtnUsuarios.BackgroundImage = botonGrisImage;
-            BtnUsuarios.ForeColor= Color.Black;
+            BtnUsuarios.HoverState.ForeColor = Color.Black;
+            //BtnUsuarios.ForeColor= Color.Black;
         }
 
         private void Parametros_Load(object sender, EventArgs e)
@@ -124,7 +125,8 @@ namespace Gestion_Casos.Parametros
             }
             botonClickeado = BtnInstituciones;
             BtnInstituciones.BackgroundImage = botonGrisImage;
-            BtnInstituciones.ForeColor = Color.Black;
+            BtnInstituciones.HoverState.ForeColor = Color.Black;
+
         }
 
 
