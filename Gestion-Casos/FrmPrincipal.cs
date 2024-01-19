@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,7 +19,9 @@ namespace Gestion_Casos
     {
         #region Variables
         bool SideBarExpand = true;
+        bool MenuExpand = false;
         private Image botonGrisImage = null;
+        private Image botonDarkImage = null;
         private bool isMaximized = false;
         private int normalWidth;
         private int normalHeight;
@@ -26,7 +29,7 @@ namespace Gestion_Casos
         private Size prevSize;
         private bool btnClicked = false;
         private Guna2GradientButton botonClickeado = null;
-
+        private bool menuDesplegado = false;
 
         public static Form formHijoActual;
         #endregion
@@ -55,16 +58,7 @@ namespace Gestion_Casos
             else
             {
                 formHijoActual.Close();
-                
-                //BtnDashboard.BackgroundImage = null;
-                //BtnParametros.BackgroundImage = null;
-                //BtnCasos.BackgroundImage = null;
-                //BtnReportes.BackgroundImage = null;
-                //BtnConsultas.BackgroundImage = null;
-                //BtnChat.BackgroundImage = null;
-                //BtnGestion.BackgroundImage = null;
-                //BtnConfiguraciones.BackgroundImage = null;
-                //PanelContenedor.Padding = new Padding(200, 120, 200, 120);
+
             }
         }
         public void AbrirFromHijo(Form formHijo)
@@ -85,7 +79,7 @@ namespace Gestion_Casos
                     }
                 }
             }
-          
+
             formHijoActual = formHijo;
             formHijo.TopLevel = false;
             formHijo.FormBorderStyle = FormBorderStyle.None;
@@ -99,7 +93,7 @@ namespace Gestion_Casos
         public void EfectoHover(Guna2GradientButton btn)
         {
             btn.Refresh();
-            btn.BackgroundImage = botonGrisImage;
+            btn.BackgroundImage = botonDarkImage;
         }
         public void EfectoLeave(Guna2GradientButton btn)
         {
@@ -114,8 +108,9 @@ namespace Gestion_Casos
         private void HideButtonText()
         {
             BtnDashboard.Text = string.Empty;
-            BtnParametros.Text = string.Empty;
+            BtnGestionCasos.Text = string.Empty;
             BtnCasos.Text = string.Empty;
+            BtnParametros.Text = string.Empty;
             BtnReportes.Text = string.Empty;
             BtnConsultas.Text = string.Empty;
             BtnChat.Text = string.Empty;
@@ -128,6 +123,7 @@ namespace Gestion_Casos
         {
             BtnDashboard.Text = BtnDashboard.Tag as string;
             BtnParametros.Text = BtnParametros.Tag as string;
+            BtnGestionCasos.Text = BtnGestionCasos.Tag as string;
             BtnCasos.Text = BtnCasos.Tag as string;
             BtnReportes.Text = BtnReportes.Tag as string;
             BtnConsultas.Text = BtnConsultas.Tag as string;
@@ -135,6 +131,31 @@ namespace Gestion_Casos
             BtnGestion.Text = BtnGestion.Tag as string;
             BtnConfiguraciones.Text = BtnConfiguraciones.Tag as string;
         }
+
+
+
+        private void MostrarSubMenu(Guna2Panel SubMenu)
+        {
+            if (SubMenu3.Visible == false)
+            {
+                OcultarSubMenu();
+                SubMenu.Visible = true;
+            }
+            else
+            {
+                menuDesplegado = false;
+                SubMenu.Visible = false;
+            }
+
+
+        }
+
+        private void OcultarSubMenu()
+        {
+            menuDesplegado = false;
+            SubMenu3.Visible = false;
+        }
+
         #endregion
 
         public FrmPrincipal()
@@ -148,6 +169,7 @@ namespace Gestion_Casos
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
             botonGrisImage = Image.FromFile(@"Resources//BotonGris-2.png");
+            botonDarkImage = Image.FromFile(@"Resources//Boton Dark.png");
         }
         private void SlideBar_Tick(object sender, EventArgs e)
         {
@@ -159,18 +181,18 @@ namespace Gestion_Casos
                 //if (Menu.Width <= 85)
                 //{
 
-                    
+
                 //}
             }
             else
             {
-                Menu.Width =290;
+                Menu.Width = 290;
                 SideBarExpand = true;
                 SlideBar.Stop();
                 ShowButtonText();
                 //if (Menu.Width >= 290)
                 //{
-                    
+
                 //}
             }
         }
@@ -184,7 +206,7 @@ namespace Gestion_Casos
         private void BtnDashboard_MouseHover(object sender, EventArgs e)
         {
             EfectoHover(BtnDashboard);
-     
+
         }
 
         private void BtnDashboard_MouseLeave(object sender, EventArgs e)
@@ -194,30 +216,30 @@ namespace Gestion_Casos
 
         private void BtnParametros_MouseHover(object sender, EventArgs e)
         {
-            EfectoHover(BtnParametros);
-          
+            EfectoHover(BtnParametro);
+
         }
 
         private void BtnParametros_MouseLeave(object sender, EventArgs e)
         {
-            EfectoLeave(BtnParametros);
+            EfectoLeave(BtnParametro);
         }
 
         private void BtnCasos_MouseHover(object sender, EventArgs e)
         {
-            EfectoHover(BtnCasos);
-        
+            EfectoHover(BtnGestionCasos);
+
         }
 
         private void BtnCasos_MouseLeave(object sender, EventArgs e)
         {
-            EfectoLeave(BtnCasos);
+            EfectoLeave(BtnGestionCasos);
         }
 
         private void BtnReportes_MouseHover(object sender, EventArgs e)
         {
             EfectoHover(BtnReportes);
-            
+
         }
 
         private void BtnReportes_MouseLeave(object sender, EventArgs e)
@@ -228,7 +250,7 @@ namespace Gestion_Casos
         private void BtnConsultas_MouseHover(object sender, EventArgs e)
         {
             EfectoHover(BtnConsultas);
-            
+
         }
 
         private void BtnConsultas_MouseLeave(object sender, EventArgs e)
@@ -239,7 +261,7 @@ namespace Gestion_Casos
         private void BtnChat_MouseHover(object sender, EventArgs e)
         {
             EfectoHover(BtnChat);
-          
+
         }
 
         private void BtnChat_MouseLeave(object sender, EventArgs e)
@@ -250,7 +272,7 @@ namespace Gestion_Casos
         private void BtnGestion_MouseHover(object sender, EventArgs e)
         {
             EfectoHover(BtnGestion);
-          
+
         }
 
         private void BtnGestion_MouseLeave(object sender, EventArgs e)
@@ -261,7 +283,7 @@ namespace Gestion_Casos
         private void BtnConfiguraciones_MouseHover(object sender, EventArgs e)
         {
             EfectoHover(BtnConfiguraciones);
-           
+
         }
 
         private void BtnConfiguraciones_MouseLeave(object sender, EventArgs e)
@@ -303,36 +325,55 @@ namespace Gestion_Casos
         private void BtnDashboard_Click(object sender, EventArgs e)
         {
             Reiniciar();
+            OcultarSubMenu();
             if (botonClickeado != null)
             {
                 botonClickeado.BackgroundImage = null;
             }
             botonClickeado = BtnDashboard;
-            BtnDashboard.BackgroundImage = botonGrisImage;
+            BtnDashboard.BackgroundImage = botonDarkImage;
         }
 
         private void BtnParametros_Click(object sender, EventArgs e)
         {
-            Reiniciar();
-            AbrirFromHijo(new FrmParametros());
-            if (botonClickeado != null)
-            {
-                botonClickeado.BackgroundImage = null;
-            }
-            botonClickeado = BtnParametros;
-            BtnParametros.BackgroundImage = botonGrisImage;
+
         }
 
-        private void BtnCasos_Click(object sender, EventArgs e)
+        private void BtnGestionCasos_Click(object sender, EventArgs e)
         {
-            Reiniciar();
-            AbrirFromHijo(new FrmCasos() );
+            MostrarSubMenu(SubMenu3);
             if (botonClickeado != null)
             {
                 botonClickeado.BackgroundImage = null;
             }
-            botonClickeado = BtnCasos;
-            BtnCasos.BackgroundImage = botonGrisImage;
+            botonClickeado = BtnGestionCasos;
+            BtnGestionCasos.BackgroundImage = botonDarkImage;
+            //if (menuDesplegado)
+            //{
+            //    // Ocultar el submenú
+            //    OcultarSubMenu();                           
+            //    BtnGestionCasos.Image = Image.FromFile(@"Resources//down-arrow-white.png");
+            //    BtnGestionCasos.BackgroundImage = null;
+
+            //}
+            //else
+            //{
+            //    // Mostrar el submenú
+
+
+            //    // Cambiar la imagen a la flecha hacia arriba
+            //    BtnGestionCasos.Image = Image.FromFile(@"Resources//arrow-up-white.png");
+            //    if (botonClickeado != null)
+            //    {
+            //        botonClickeado.BackgroundImage = null;
+            //    }
+            //    botonClickeado = BtnGestionCasos;
+            //    BtnGestionCasos.BackgroundImage = botonGrisImage;
+            //}
+
+            //// Cambiar el estado del menú
+            //menuDesplegado = !menuDesplegado;
+
         }
 
         private void BtnReportes_Click(object sender, EventArgs e)
@@ -342,8 +383,8 @@ namespace Gestion_Casos
             {
                 botonClickeado.BackgroundImage = null;
             }
-            botonClickeado = BtnReportes;
-            BtnReportes.BackgroundImage = botonGrisImage;
+            botonClickeado = Btn2;
+            Btn2.BackgroundImage = botonDarkImage;
         }
 
         private void BtnConsultas_Click(object sender, EventArgs e)
@@ -353,8 +394,8 @@ namespace Gestion_Casos
             {
                 botonClickeado.BackgroundImage = null;
             }
-            botonClickeado = BtnConsultas;
-            BtnConsultas.BackgroundImage = botonGrisImage;
+            botonClickeado = Btn1;
+            Btn1.BackgroundImage = botonDarkImage;
         }
 
         private void BtnChat_Click(object sender, EventArgs e)
@@ -364,8 +405,8 @@ namespace Gestion_Casos
             {
                 botonClickeado.BackgroundImage = null;
             }
-            botonClickeado = BtnChat ;
-            BtnChat.BackgroundImage = botonGrisImage;
+            botonClickeado = BtnChat;
+            BtnChat.BackgroundImage = botonDarkImage;
         }
 
         private void BtnGestion_Click(object sender, EventArgs e)
@@ -376,7 +417,7 @@ namespace Gestion_Casos
                 botonClickeado.BackgroundImage = null;
             }
             botonClickeado = BtnGestion;
-            BtnGestion.BackgroundImage = botonGrisImage;
+            BtnGestion.BackgroundImage = botonDarkImage;
         }
 
         private void BtnConfiguraciones_Click(object sender, EventArgs e)
@@ -389,5 +430,66 @@ namespace Gestion_Casos
             botonClickeado = BtnConfiguraciones;
             BtnConfiguraciones.BackgroundImage = botonGrisImage;
         }
+
+        private void SubMenuTrancicion_Tick(object sender, EventArgs e)
+        {
+            MostrarSubMenu(SubMenu3);
+        }
+
+        private void BtnCasos_Click(object sender, EventArgs e)
+        {
+            Reiniciar();
+            AbrirFromHijo(new FrmCasos());
+            if (botonClickeado != null)
+            {
+                botonClickeado.BackgroundImage = null;
+            }
+            botonClickeado = BtnGestionCasos;
+            BtnGestionCasos.BackgroundImage = botonDarkImage;
+        }
+
+        private void BtnParametros_Click_1(object sender, EventArgs e)
+        {
+            Reiniciar();
+            AbrirFromHijo(new FrmParametros());
+            if (botonClickeado != null)
+            {
+                botonClickeado.BackgroundImage = null;
+            }
+            botonClickeado = BtnParametros;
+            BtnParametros.BackgroundImage = botonDarkImage;
+        }
+
+        private void BtnCasos_MouseHover_1(object sender, EventArgs e)
+        {
+            EfectoHover(BtnCasos);
+        }
+
+        private void BtnCasos_MouseLeave_1(object sender, EventArgs e)
+        {
+            EfectoLeave(BtnCasos);
+        }
+
+        private void BtnParametros_MouseHover_1(object sender, EventArgs e)
+        {
+            EfectoHover(BtnParametros);
+        }
+
+        private void BtnParametros_MouseLeave_1(object sender, EventArgs e)
+        {
+            EfectoLeave(BtnParametros);
+        }
+
+        //private void BtnParametros_Click(object sender, EventArgs e)
+        //{
+        //    Reiniciar();
+        //    AbrirFromHijo(new FrmParametros());
+        //    if (botonClickeado != null)
+        //    {
+        //        botonClickeado.BackgroundImage = null;
+        //    }
+        //    botonClickeado = BtnParametro;
+        //    BtnParametro.BackgroundImage = botonGrisImage;
+        //}
     }
 }
