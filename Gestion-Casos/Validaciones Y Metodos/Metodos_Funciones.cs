@@ -114,6 +114,12 @@ namespace Gestion_Casos.Validaciones_Y_Metodos
 
         }
 
+        public static void ActivarBtnRevisado(Guna2Button buttonRevisado)
+        {
+            buttonRevisado.Enabled = true;
+
+        }
+
         /// <summary>
         /// Metodo para Activar el BtnEntregado si ya se realizaron los procesos anterior a este estado
         /// </summary>
@@ -135,28 +141,51 @@ namespace Gestion_Casos.Validaciones_Y_Metodos
         /// <param name="BtnActivo"></param>
         /// <param name="BtnInactivo2"></param>
         /// <param name="BtnInactivo3"></param>
-        public static void mostrar_ocultar_panel(Guna2Panel panelActivo, Guna2Panel panelInactivo1, Guna2Panel panelInactivo2, Guna2Button BtnActivo, Guna2Button BtnInactivo2, Guna2Button BtnInactivo3, Guna2Panel PanelContenedorTabControl)
+        public static void mostrar_ocultar_panel(Guna2Panel panelActivo, Guna2Panel panelInactivo1, Guna2Panel panelInactivo2, Guna2Panel panelInactivo3, Guna2Button BtnActivo, Guna2Button BtnInactivo2, Guna2Button BtnInactivo3, Guna2Button BtnInactivo4, Guna2Panel PanelContenedorTabControl)
         {
             PanelContenedorTabControl.AutoScroll = false;
             panelActivo.Visible = true;
             panelActivo.Dock = DockStyle.Fill;
             panelInactivo1.Visible = false;
             panelInactivo2.Visible = false;
+            panelInactivo3.Visible = false;
             BtnActivo.BackgroundImage = Image.FromFile(@"Resources//Boton Azul-2.png");
             BtnInactivo2.BackgroundImage = Image.FromFile(@"Resources//BotonGris-2.png");
             BtnInactivo3.BackgroundImage = Image.FromFile(@"Resources//BotonGris-2.png");
+            BtnInactivo4.BackgroundImage = Image.FromFile(@"Resources//BotonGris-2.png");
 
         }
 
 
-        public static void InhabilitarTab(Guna2Panel panelRevision, Guna2Button buttonRevision, Guna2Panel panelPorEntregar, Guna2Button buttonPorEntregar, Guna2Panel panelEntregado, Guna2Button buttonEntregado)
+        public static void InhabilitarTab(Guna2Panel panelRevision, Guna2Button buttonRevision, Guna2Panel panelRevisado, Guna2Button buttonRevisado, Guna2Panel panelPorEntregar, Guna2Button buttonPorEntregar, Guna2Panel panelEntregado, Guna2Button buttonEntregado)
         {
             panelRevision.Visible = false;
             buttonRevision.Enabled = false;
+            panelRevisado.Visible = false;
+            buttonRevisado.Enabled = false;
             panelPorEntregar.Visible = false;
             buttonPorEntregar.Enabled= false;
             panelEntregado.Visible = false;
-            buttonEntregado.Enabled= false; 
+            buttonEntregado.Enabled= false;
+        }
+
+       public static void Ir_Adelante_Dgv(Guna2DataGridView Dgv, int indiceActual)
+        {
+            if (Dgv.Rows.Count > 0)
+            {
+
+                // Desmarca la fila actual si está seleccionada
+                if (indiceActual != -1)
+                {
+                    Dgv.Rows[indiceActual].Selected = false;
+                }
+
+                // Calcula el índice de la siguiente fila en orden consecutivo
+                indiceActual = (indiceActual + 1) % Dgv.Rows.Count;
+
+                // Marca la siguiente fila
+                Dgv.Rows[indiceActual].Selected = true;
+            }
         }
     }
 }

@@ -20,6 +20,7 @@ namespace Gestion_Casos.Casos
         bool estado = false;
         bool estado2 = false;
         bool estado3 = false;
+        bool estado4 = false;
 
 
 
@@ -49,7 +50,7 @@ namespace Gestion_Casos.Casos
                     estado2 = true;
                     if (estado2)
                     {
-                        Metodos_Funciones.ActivarBtnPorEntregar(BtnPorEntregar);
+                        Metodos_Funciones.ActivarBtnRevisado(BtnRevisado);
 
 
                         // si ya estan las anteriores 2 opciones entonces se habilida entregar
@@ -57,6 +58,17 @@ namespace Gestion_Casos.Casos
                         if (estado3)
                         {
                             Metodos_Funciones.ActivarBtnEntregado(BtnEntregado);
+                            estado4 = true;
+
+                            if (estado4)
+                            {
+                                Metodos_Funciones.ActivarBtnEntregado(BtnEntregado);
+                            }
+                            else
+                            {
+
+                                return;
+                            }
                         }
                         else
                         {
@@ -84,24 +96,24 @@ namespace Gestion_Casos.Casos
 
         private void BtnRevision_Click(object sender, EventArgs e)
         {
-            Metodos_Funciones.mostrar_ocultar_panel(PanelRevision, PanelPorEntregar, PanelEntregado, BtnRevision, BtnPorEntregar, BtnEntregado, PanelContenedorTabControl);
+            Metodos_Funciones.mostrar_ocultar_panel(PanelRevision, PanelRevisado,PanelPorEntregar, PanelEntregado, BtnRevision,BtnRevisado, BtnPorEntregar, BtnEntregado, PanelContenedorTabControl);
         }
 
         private void BtnPorEntregar_Click(object sender, EventArgs e)
         {
-            Metodos_Funciones.mostrar_ocultar_panel(PanelPorEntregar, PanelRevision, PanelEntregado, BtnPorEntregar, BtnRevision, BtnEntregado, PanelContenedorTabControl);
+            Metodos_Funciones.mostrar_ocultar_panel(PanelPorEntregar, PanelRevision,PanelRevisado, PanelEntregado, BtnPorEntregar, BtnRevision,BtnRevisado, BtnEntregado, PanelContenedorTabControl);
         }
 
         private void BtnEntregado_Click(object sender, EventArgs e)
         {
-            Metodos_Funciones.mostrar_ocultar_panel(PanelEntregado, PanelPorEntregar, PanelRevision, BtnEntregado, BtnRevision, BtnPorEntregar, PanelContenedorTabControl);
+            Metodos_Funciones.mostrar_ocultar_panel(PanelEntregado, PanelPorEntregar, PanelRevisado, PanelRevision, BtnEntregado, BtnRevision, BtnRevisado, BtnPorEntregar, PanelContenedorTabControl);
         }
 
         private void BtnNUevo_Click(object sender, EventArgs e)
         {
             Metodos_Funciones.ActivarControles(PanelDatosPrincipales);
             Metodos_Funciones.LimpiarControles(PanelDatosPrincipales);
-          
+
         }
 
         private void BtnEditar_Click(object sender, EventArgs e)
@@ -183,6 +195,12 @@ namespace Gestion_Casos.Casos
         private void BtnBloquear_Click_1(object sender, EventArgs e)
         {
             Metodos_Funciones.BloquearControles(PanelDatosPrincipales);
+
+        }
+
+        private void BtnRevisado_Click(object sender, EventArgs e)
+        {
+            Metodos_Funciones.mostrar_ocultar_panel(PanelRevisado,PanelRevision, PanelPorEntregar, PanelEntregado,BtnRevisado, BtnRevision, BtnPorEntregar, BtnEntregado, PanelContenedorTabControl);
 
         }
     }

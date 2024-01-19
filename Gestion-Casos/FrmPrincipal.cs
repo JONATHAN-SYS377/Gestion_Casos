@@ -57,6 +57,7 @@ namespace Gestion_Casos
             }
             else
             {
+                OcultarSubMenu();
                 formHijoActual.Close();
 
             }
@@ -334,10 +335,7 @@ namespace Gestion_Casos
             BtnDashboard.BackgroundImage = botonDarkImage;
         }
 
-        private void BtnParametros_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void BtnGestionCasos_Click(object sender, EventArgs e)
         {
@@ -401,6 +399,7 @@ namespace Gestion_Casos
         private void BtnChat_Click(object sender, EventArgs e)
         {
             Reiniciar();
+            OcultarSubMenu();
             if (botonClickeado != null)
             {
                 botonClickeado.BackgroundImage = null;
@@ -412,6 +411,7 @@ namespace Gestion_Casos
         private void BtnGestion_Click(object sender, EventArgs e)
         {
             Reiniciar();
+            OcultarSubMenu();
             if (botonClickeado != null)
             {
                 botonClickeado.BackgroundImage = null;
@@ -423,6 +423,7 @@ namespace Gestion_Casos
         private void BtnConfiguraciones_Click(object sender, EventArgs e)
         {
             Reiniciar();
+            OcultarSubMenu();
             if (botonClickeado != null)
             {
                 botonClickeado.BackgroundImage = null;
@@ -480,16 +481,6 @@ namespace Gestion_Casos
             EfectoLeave(BtnParametros);
         }
 
-        //private void BtnParametros_Click(object sender, EventArgs e)
-        //{
-        //    Reiniciar();
-        //    AbrirFromHijo(new FrmParametros());
-        //    if (botonClickeado != null)
-        //    {
-        //        botonClickeado.BackgroundImage = null;
-        //    }
-        //    botonClickeado = BtnParametro;
-        //    BtnParametro.BackgroundImage = botonGrisImage;
-        //}
+        
     }
 }

@@ -659,7 +659,7 @@
             SubMenu3.Controls.Add(guna2Separator1);
             SubMenu3.CustomizableEdges = customizableEdges45;
             SubMenu3.Dock = DockStyle.Top;
-            SubMenu3.FillColor = Color.Transparent;
+            SubMenu3.FillColor = Color.FromArgb(56, 56, 56);
             SubMenu3.Location = new Point(4, 163);
             SubMenu3.MinimumSize = new Size(0, 180);
             SubMenu3.Name = "SubMenu3";

@@ -53,7 +53,7 @@
             // 
             // BarraMenu
             // 
-            BarraMenu.BackColor = Color.FromArgb(54, 54, 54);
+            BarraMenu.BackColor = Color.Transparent;
             BarraMenu.BackgroundImage = Properties.Resources.BarraTareas1;
             BarraMenu.BackgroundImageLayout = ImageLayout.Stretch;
             BarraMenu.Controls.Add(Espaciador2);
@@ -98,8 +98,6 @@
             BtnInstituciones.FillColor2 = Color.Transparent;
             BtnInstituciones.Font = new Font("Microsoft Sans Serif", 12F);
             BtnInstituciones.ForeColor = Color.White;
-            BtnInstituciones.HoverState.ForeColor = Color.Black;
-            BtnInstituciones.HoverState.Image = Properties.Resources.dashboard_dark;
             BtnInstituciones.Image = Properties.Resources.dashboard_white;
             BtnInstituciones.ImageAlign = HorizontalAlignment.Left;
             BtnInstituciones.ImageOffset = new Point(7, 0);
@@ -146,8 +144,6 @@
             BtnUsuarios.FillColor2 = Color.Transparent;
             BtnUsuarios.Font = new Font("Microsoft Sans Serif", 12F);
             BtnUsuarios.ForeColor = Color.White;
-            BtnUsuarios.HoverState.ForeColor = Color.Black;
-            BtnUsuarios.HoverState.Image = Properties.Resources.dashboard_dark;
             BtnUsuarios.Image = Properties.Resources.dashboard_white;
             BtnUsuarios.ImageAlign = HorizontalAlignment.Left;
             BtnUsuarios.ImageOffset = new Point(7, 0);

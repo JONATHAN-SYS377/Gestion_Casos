@@ -163,6 +163,16 @@ namespace Gestion_Casos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Boton_Naranja {
+            get {
+                object obj = ResourceManager.GetObject("Boton-Naranja", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Boton_Rojo {
             get {
                 object obj = ResourceManager.GetObject("Boton Rojo", resourceCulture);
@@ -403,9 +413,29 @@ namespace Gestion_Casos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap entrega_rapida_white {
+            get {
+                object obj = ResourceManager.GetObject("entrega-rapida-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap enviar_correo {
             get {
                 object obj = ResourceManager.GetObject("enviar-correo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap escoba {
+            get {
+                object obj = ResourceManager.GetObject("escoba", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -446,6 +476,16 @@ namespace Gestion_Casos.Properties {
         internal static System.Drawing.Bitmap flujo_de_trabajo {
             get {
                 object obj = ResourceManager.GetObject("flujo-de-trabajo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flujo_de_trabajo_white {
+            get {
+                object obj = ResourceManager.GetObject("flujo-de-trabajo-white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -663,9 +703,29 @@ namespace Gestion_Casos.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap revisar_white {
+            get {
+                object obj = ResourceManager.GetObject("revisar white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap revision {
             get {
                 object obj = ResourceManager.GetObject("revision", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap revision_white {
+            get {
+                object obj = ResourceManager.GetObject("revision-white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -686,6 +746,26 @@ namespace Gestion_Casos.Properties {
         internal static System.Drawing.Bitmap sistema_de_gestion_de_contenidos_dark {
             get {
                 object obj = ResourceManager.GetObject("sistema-de-gestion-de-contenidos-dark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tirar_basura {
+            get {
+                object obj = ResourceManager.GetObject("tirar-basura", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tirar_basura_white {
+            get {
+                object obj = ResourceManager.GetObject("tirar-basura-white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
