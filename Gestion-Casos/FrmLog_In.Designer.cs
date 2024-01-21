@@ -75,7 +75,7 @@
             TxtEmail = new Guna.UI2.WinForms.Guna2TextBox();
             panel3 = new Panel();
             pictureBox2 = new PictureBox();
-            guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(components);
+            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             BarraTitulo.SuspendLayout();
             panel1.SuspendLayout();
             guna2TabControl1.SuspendLayout();
@@ -572,10 +572,12 @@
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
             // 
-            // guna2AnimateWindow1
+            // guna2BorderlessForm1
             // 
-            guna2AnimateWindow1.AnimationType = Guna.UI2.WinForms.Guna2AnimateWindow.AnimateWindowType.AW_BLEND;
-            guna2AnimateWindow1.TargetForm = this;
+            guna2BorderlessForm1.BorderRadius = 10;
+            guna2BorderlessForm1.ContainerControl = this;
+            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // FrmLog_In
             // 
@@ -633,6 +635,6 @@
         private PictureBox pictureBox2;
         private Guna.UI2.WinForms.Guna2GradientButton BtnMinimizar;
         private Guna.UI2.WinForms.Guna2GradientButton BtnClose;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }

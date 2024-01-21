@@ -134,8 +134,8 @@
             guna2DragControl5 = new Guna.UI2.WinForms.Guna2DragControl(components);
             guna2DragControl6 = new Guna.UI2.WinForms.Guna2DragControl(components);
             guna2DragControl7 = new Guna.UI2.WinForms.Guna2DragControl(components);
-            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             SubMenuTrancicion = new System.Windows.Forms.Timer(components);
+            guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
             BarraTitulo.SuspendLayout();
             guna2Panel3.SuspendLayout();
             guna2Panel2.SuspendLayout();
@@ -988,16 +988,17 @@
             guna2DragControl7.TargetControl = FotoPerfil;
             guna2DragControl7.UseTransparentDrag = true;
             // 
-            // guna2BorderlessForm1
-            // 
-            guna2BorderlessForm1.ContainerControl = this;
-            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
             // SubMenuTrancicion
             // 
             SubMenuTrancicion.Interval = 5;
             SubMenuTrancicion.Tick += SubMenuTrancicion_Tick;
+            // 
+            // guna2BorderlessForm1
+            // 
+            guna2BorderlessForm1.BorderRadius = 10;
+            guna2BorderlessForm1.ContainerControl = this;
+            guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // FrmPrincipal
             // 
@@ -1013,7 +1014,7 @@
             Name = "FrmPrincipal";
             Padding = new Padding(1, 0, 1, 2);
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "FrmPrincipal";
+            Text = "principal";
             Load += FrmPrincipal_Load;
             BarraTitulo.ResumeLayout(false);
             guna2Panel3.ResumeLayout(false);
@@ -1079,7 +1080,6 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl6;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl7;
         private PictureBox pictureBox1;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.Timer SubMenuTrancicion;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
@@ -1087,5 +1087,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton BtnConsultas;
         private Guna.UI2.WinForms.Guna2GradientButton BtnParametros;
         private Guna.UI2.WinForms.Guna2GradientButton BtnCasos;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }

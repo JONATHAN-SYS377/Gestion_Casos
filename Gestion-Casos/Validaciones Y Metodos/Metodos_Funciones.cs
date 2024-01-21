@@ -129,7 +129,15 @@ namespace Gestion_Casos.Validaciones_Y_Metodos
             buttonEntregado.Enabled = true;
 
         }
+        /// <summary>
+        /// Metodo para Activar el BtnEntregado si ya se realizaron los procesos anterior a este estado
+        /// </summary>
+        /// <param name="buttonEntregado"></param>
+        public static void ActivarBtnPorEntregado(Guna2Button buttonPorEntregado)
+        {
+            buttonPorEntregado.Enabled = true;
 
+        }
         /// <summary>
         /// Metodo para realizar la funcion del Tab Control resibe el primer parametros seria el panel que e quiere mostrar y 
         /// parametros 2 y 3 los paneles a ocultar, el parametro 4 seria el boton a que se deasea mostrar como activo 

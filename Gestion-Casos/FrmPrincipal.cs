@@ -119,7 +119,6 @@ namespace Gestion_Casos
             BtnConfiguraciones.Text = string.Empty;
 
         }
-
         private void ShowButtonText()
         {
             BtnDashboard.Text = BtnDashboard.Tag as string;
@@ -132,9 +131,6 @@ namespace Gestion_Casos
             BtnGestion.Text = BtnGestion.Tag as string;
             BtnConfiguraciones.Text = BtnConfiguraciones.Tag as string;
         }
-
-
-
         private void MostrarSubMenu(Guna2Panel SubMenu)
         {
             if (SubMenu3.Visible == false)
@@ -150,7 +146,6 @@ namespace Gestion_Casos
 
 
         }
-
         private void OcultarSubMenu()
         {
             menuDesplegado = false;
@@ -166,6 +161,9 @@ namespace Gestion_Casos
             normalHeight = this.Height;
             ObtenerFabticanteVersion();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.Text = string.Empty;
+            this.DoubleBuffered = true;
+
         }
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {

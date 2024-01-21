@@ -1,4 +1,5 @@
 using Gestion_Casos.Casos;
+using Gestion_Casos.Principal;
 
 namespace Gestion_Casos
 {
@@ -13,7 +14,7 @@ namespace Gestion_Casos
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new FrmPrincipal());
+            Application.Run(new FrmPrincipal_());
         }
     }
 }

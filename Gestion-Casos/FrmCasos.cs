@@ -31,7 +31,7 @@ namespace Gestion_Casos.Casos
         {
             InitializeComponent();
             DtpFecha.Value = DateTime.Now;
-
+            
         }
 
         private void TxtBuscar_TextChanged(object sender, EventArgs e)
@@ -57,7 +57,7 @@ namespace Gestion_Casos.Casos
                         estado3 = true;
                         if (estado3)
                         {
-                            Metodos_Funciones.ActivarBtnEntregado(BtnEntregado);
+                            Metodos_Funciones.ActivarBtnPorEntregado(BtnPorEntregar);
                             estado4 = true;
 
                             if (estado4)
@@ -88,7 +88,7 @@ namespace Gestion_Casos.Casos
             }
             else
             {
-                Metodos_Funciones.InhabilitarTab(PanelRevision, BtnRevision, PanelPorEntregar, BtnPorEntregar, PanelEntregado, BtnEntregado);
+                Metodos_Funciones.InhabilitarTab(PanelRevision, BtnRevision, PanelRevisado, BtnRevisado,PanelPorEntregar, BtnPorEntregar, PanelEntregado, BtnEntregado);
             }
         }
 

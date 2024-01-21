@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Gestion_Casos.Principal;
 
 namespace Gestion_Casos
 {
@@ -66,7 +67,7 @@ namespace Gestion_Casos
         private void BtnAcceder_Click(object sender, EventArgs e)
         {
             this.Hide();
-            FrmPrincipal frmPrincipal = new FrmPrincipal();
+            FrmPrincipal_ frmPrincipal = new FrmPrincipal_();
             frmPrincipal.ShowDialog();
         }
 
