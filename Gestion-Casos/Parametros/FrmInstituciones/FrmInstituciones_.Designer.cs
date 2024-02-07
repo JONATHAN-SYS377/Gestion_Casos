@@ -144,14 +144,14 @@
             PanelPrincipal = new Guna.UI2.WinForms.Guna2Panel();
             PanelDataGridView = new Guna.UI2.WinForms.Guna2Panel();
             DgvInstituciones = new Guna.UI2.WinForms.Guna2DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
+            cmCodigo = new DataGridViewTextBoxColumn();
+            cmInstitucion = new DataGridViewTextBoxColumn();
+            cmContador = new DataGridViewTextBoxColumn();
             PanelControles = new Guna.UI2.WinForms.Guna2Panel();
+            cbCircuito = new Guna.UI2.WinForms.Guna2ComboBox();
             CbTipo = new Guna.UI2.WinForms.Guna2ComboBox();
             TxtCedulaJurica = new Guna.UI2.WinForms.Guna2TextBox();
             TxtInstitucion = new Guna.UI2.WinForms.Guna2TextBox();
-            TxtCircuito = new Guna.UI2.WinForms.Guna2TextBox();
             TxtCodigo = new Guna.UI2.WinForms.Guna2TextBox();
             CbTipoCuenta = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -163,7 +163,7 @@
             TxtContacto = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            CbCuentaLey6746 = new Guna.UI2.WinForms.Guna2TextBox();
+            TxtCuentaLey = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             TxtNumContacto = new Guna.UI2.WinForms.Guna2TextBox();
@@ -386,6 +386,7 @@
             BtnBloquear.Size = new Size(38, 34);
             BtnBloquear.TabIndex = 16;
             BtnBloquear.TextAlign = HorizontalAlignment.Left;
+            BtnBloquear.Click += BtnBloquear_Click;
             // 
             // espaciador8
             // 
@@ -422,6 +423,7 @@
             BtnSave.Size = new Size(38, 34);
             BtnSave.TabIndex = 14;
             BtnSave.TextAlign = HorizontalAlignment.Left;
+            BtnSave.Click += BtnSave_Click;
             // 
             // Espaciador7
             // 
@@ -473,6 +475,7 @@
             BtnCancelar.Size = new Size(38, 34);
             BtnCancelar.TabIndex = 12;
             BtnCancelar.TextAlign = HorizontalAlignment.Left;
+            BtnCancelar.Click += BtnCancelar_Click;
             // 
             // Espaciador6
             // 
@@ -509,6 +512,7 @@
             BtnEditar.Size = new Size(38, 34);
             BtnEditar.TabIndex = 10;
             BtnEditar.TextAlign = HorizontalAlignment.Left;
+            BtnEditar.Click += BtnEditar_Click;
             // 
             // Espaciador5
             // 
@@ -545,6 +549,7 @@
             BtnNUevo.Size = new Size(38, 34);
             BtnNUevo.TabIndex = 8;
             BtnNUevo.TextAlign = HorizontalAlignment.Left;
+            BtnNUevo.Click += BtnNUevo_Click;
             // 
             // Espaciador4
             // 
@@ -747,7 +752,7 @@
             DgvInstituciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             DgvInstituciones.ColumnHeadersHeight = 22;
             DgvInstituciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            DgvInstituciones.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
+            DgvInstituciones.Columns.AddRange(new DataGridViewColumn[] { cmCodigo, cmInstitucion, cmContador });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.FromArgb(214, 234, 247);
             dataGridViewCellStyle3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -787,30 +792,30 @@
             DgvInstituciones.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(119, 186, 231);
             DgvInstituciones.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
             // 
-            // Column1
+            // cmCodigo
             // 
-            Column1.HeaderText = "Column1";
-            Column1.Name = "Column1";
-            Column1.ReadOnly = true;
+            cmCodigo.HeaderText = "Codigo";
+            cmCodigo.Name = "cmCodigo";
+            cmCodigo.ReadOnly = true;
             // 
-            // Column2
+            // cmInstitucion
             // 
-            Column2.HeaderText = "Column2";
-            Column2.Name = "Column2";
-            Column2.ReadOnly = true;
+            cmInstitucion.HeaderText = "Nombre Institucion";
+            cmInstitucion.Name = "cmInstitucion";
+            cmInstitucion.ReadOnly = true;
             // 
-            // Column3
+            // cmContador
             // 
-            Column3.HeaderText = "Column3";
-            Column3.Name = "Column3";
-            Column3.ReadOnly = true;
+            cmContador.HeaderText = "Contador";
+            cmContador.Name = "cmContador";
+            cmContador.ReadOnly = true;
             // 
             // PanelControles
             // 
+            PanelControles.Controls.Add(cbCircuito);
             PanelControles.Controls.Add(CbTipo);
             PanelControles.Controls.Add(TxtCedulaJurica);
             PanelControles.Controls.Add(TxtInstitucion);
-            PanelControles.Controls.Add(TxtCircuito);
             PanelControles.Controls.Add(TxtCodigo);
             PanelControles.Controls.Add(CbTipoCuenta);
             PanelControles.Controls.Add(guna2HtmlLabel8);
@@ -822,7 +827,7 @@
             PanelControles.Controls.Add(TxtContacto);
             PanelControles.Controls.Add(guna2HtmlLabel2);
             PanelControles.Controls.Add(guna2HtmlLabel18);
-            PanelControles.Controls.Add(CbCuentaLey6746);
+            PanelControles.Controls.Add(TxtCuentaLey);
             PanelControles.Controls.Add(guna2HtmlLabel3);
             PanelControles.Controls.Add(guna2HtmlLabel17);
             PanelControles.Controls.Add(TxtNumContacto);
@@ -837,17 +842,40 @@
             PanelControles.Size = new Size(1074, 205);
             PanelControles.TabIndex = 26;
             // 
+            // cbCircuito
+            // 
+            cbCircuito.BackColor = Color.Transparent;
+            cbCircuito.BorderColor = Color.FromArgb(224, 224, 224);
+            cbCircuito.BorderRadius = 5;
+            cbCircuito.CustomizableEdges = customizableEdges57;
+            cbCircuito.DisabledState.FillColor = SystemColors.ScrollBar;
+            cbCircuito.DisabledState.ForeColor = Color.Black;
+            cbCircuito.DrawMode = DrawMode.OwnerDrawFixed;
+            cbCircuito.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbCircuito.FillColor = Color.FromArgb(224, 224, 224);
+            cbCircuito.FocusedColor = Color.FromArgb(94, 148, 255);
+            cbCircuito.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            cbCircuito.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cbCircuito.ForeColor = Color.Black;
+            cbCircuito.ItemHeight = 30;
+            cbCircuito.Items.AddRange(new object[] { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo" });
+            cbCircuito.Location = new Point(210, 26);
+            cbCircuito.Name = "cbCircuito";
+            cbCircuito.ShadowDecoration.CustomizableEdges = customizableEdges58;
+            cbCircuito.Size = new Size(175, 36);
+            cbCircuito.TabIndex = 38;
+            cbCircuito.TextAlign = HorizontalAlignment.Center;
+            // 
             // CbTipo
             // 
             CbTipo.BackColor = Color.Transparent;
             CbTipo.BorderColor = Color.FromArgb(224, 224, 224);
             CbTipo.BorderRadius = 5;
-            CbTipo.CustomizableEdges = customizableEdges57;
+            CbTipo.CustomizableEdges = customizableEdges59;
             CbTipo.DisabledState.FillColor = SystemColors.ScrollBar;
             CbTipo.DisabledState.ForeColor = Color.Black;
             CbTipo.DrawMode = DrawMode.OwnerDrawFixed;
             CbTipo.DropDownStyle = ComboBoxStyle.DropDownList;
-            CbTipo.Enabled = false;
             CbTipo.FillColor = Color.FromArgb(224, 224, 224);
             CbTipo.FocusedColor = Color.FromArgb(94, 148, 255);
             CbTipo.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
@@ -857,14 +885,15 @@
             CbTipo.Items.AddRange(new object[] { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo" });
             CbTipo.Location = new Point(15, 94);
             CbTipo.Name = "CbTipo";
-            CbTipo.ShadowDecoration.CustomizableEdges = customizableEdges58;
+            CbTipo.ShadowDecoration.CustomizableEdges = customizableEdges60;
             CbTipo.Size = new Size(175, 36);
             CbTipo.TabIndex = 37;
+            CbTipo.TextAlign = HorizontalAlignment.Center;
             // 
             // TxtCedulaJurica
             // 
             TxtCedulaJurica.BorderRadius = 5;
-            TxtCedulaJurica.CustomizableEdges = customizableEdges59;
+            TxtCedulaJurica.CustomizableEdges = customizableEdges61;
             TxtCedulaJurica.DefaultText = "";
             TxtCedulaJurica.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtCedulaJurica.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -880,14 +909,14 @@
             TxtCedulaJurica.PasswordChar = '\0';
             TxtCedulaJurica.PlaceholderText = "";
             TxtCedulaJurica.SelectedText = "";
-            TxtCedulaJurica.ShadowDecoration.CustomizableEdges = customizableEdges60;
+            TxtCedulaJurica.ShadowDecoration.CustomizableEdges = customizableEdges62;
             TxtCedulaJurica.Size = new Size(225, 35);
             TxtCedulaJurica.TabIndex = 36;
             // 
             // TxtInstitucion
             // 
             TxtInstitucion.BorderRadius = 5;
-            TxtInstitucion.CustomizableEdges = customizableEdges61;
+            TxtInstitucion.CustomizableEdges = customizableEdges63;
             TxtInstitucion.DefaultText = "";
             TxtInstitucion.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtInstitucion.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -903,32 +932,9 @@
             TxtInstitucion.PasswordChar = '\0';
             TxtInstitucion.PlaceholderText = "";
             TxtInstitucion.SelectedText = "";
-            TxtInstitucion.ShadowDecoration.CustomizableEdges = customizableEdges62;
+            TxtInstitucion.ShadowDecoration.CustomizableEdges = customizableEdges64;
             TxtInstitucion.Size = new Size(404, 35);
             TxtInstitucion.TabIndex = 35;
-            // 
-            // TxtCircuito
-            // 
-            TxtCircuito.BorderRadius = 5;
-            TxtCircuito.CustomizableEdges = customizableEdges63;
-            TxtCircuito.DefaultText = "";
-            TxtCircuito.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            TxtCircuito.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            TxtCircuito.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            TxtCircuito.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            TxtCircuito.FillColor = Color.FromArgb(224, 224, 224);
-            TxtCircuito.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtCircuito.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TxtCircuito.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtCircuito.Location = new Point(210, 27);
-            TxtCircuito.Margin = new Padding(4);
-            TxtCircuito.Name = "TxtCircuito";
-            TxtCircuito.PasswordChar = '\0';
-            TxtCircuito.PlaceholderText = "";
-            TxtCircuito.SelectedText = "";
-            TxtCircuito.ShadowDecoration.CustomizableEdges = customizableEdges64;
-            TxtCircuito.Size = new Size(175, 35);
-            TxtCircuito.TabIndex = 34;
             // 
             // TxtCodigo
             // 
@@ -963,7 +969,6 @@
             CbTipoCuenta.DisabledState.ForeColor = Color.Black;
             CbTipoCuenta.DrawMode = DrawMode.OwnerDrawFixed;
             CbTipoCuenta.DropDownStyle = ComboBoxStyle.DropDownList;
-            CbTipoCuenta.Enabled = false;
             CbTipoCuenta.FillColor = Color.FromArgb(224, 224, 224);
             CbTipoCuenta.FocusedColor = Color.FromArgb(94, 148, 255);
             CbTipoCuenta.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
@@ -976,6 +981,7 @@
             CbTipoCuenta.ShadowDecoration.CustomizableEdges = customizableEdges68;
             CbTipoCuenta.Size = new Size(213, 36);
             CbTipoCuenta.TabIndex = 32;
+            CbTipoCuenta.TextAlign = HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel8
             // 
@@ -1011,7 +1017,6 @@
             CbDiaRuta.DisabledState.ForeColor = Color.Black;
             CbDiaRuta.DrawMode = DrawMode.OwnerDrawFixed;
             CbDiaRuta.DropDownStyle = ComboBoxStyle.DropDownList;
-            CbDiaRuta.Enabled = false;
             CbDiaRuta.FillColor = Color.FromArgb(224, 224, 224);
             CbDiaRuta.FocusedColor = Color.FromArgb(94, 148, 255);
             CbDiaRuta.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
@@ -1024,6 +1029,7 @@
             CbDiaRuta.ShadowDecoration.CustomizableEdges = customizableEdges70;
             CbDiaRuta.Size = new Size(175, 36);
             CbDiaRuta.TabIndex = 28;
+            CbDiaRuta.TextAlign = HorizontalAlignment.Center;
             // 
             // guna2HtmlLabel6
             // 
@@ -1108,28 +1114,28 @@
             guna2HtmlLabel18.Text = "Cuenta Ley 6746";
             guna2HtmlLabel18.TextAlignment = ContentAlignment.TopCenter;
             // 
-            // CbCuentaLey6746
+            // TxtCuentaLey
             // 
-            CbCuentaLey6746.BorderRadius = 5;
-            CbCuentaLey6746.CustomizableEdges = customizableEdges73;
-            CbCuentaLey6746.DefaultText = "";
-            CbCuentaLey6746.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            CbCuentaLey6746.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            CbCuentaLey6746.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            CbCuentaLey6746.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            CbCuentaLey6746.FillColor = Color.FromArgb(224, 224, 224);
-            CbCuentaLey6746.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            CbCuentaLey6746.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CbCuentaLey6746.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            CbCuentaLey6746.Location = new Point(772, 95);
-            CbCuentaLey6746.Margin = new Padding(4);
-            CbCuentaLey6746.Name = "CbCuentaLey6746";
-            CbCuentaLey6746.PasswordChar = '\0';
-            CbCuentaLey6746.PlaceholderText = "";
-            CbCuentaLey6746.SelectedText = "";
-            CbCuentaLey6746.ShadowDecoration.CustomizableEdges = customizableEdges74;
-            CbCuentaLey6746.Size = new Size(280, 35);
-            CbCuentaLey6746.TabIndex = 23;
+            TxtCuentaLey.BorderRadius = 5;
+            TxtCuentaLey.CustomizableEdges = customizableEdges73;
+            TxtCuentaLey.DefaultText = "";
+            TxtCuentaLey.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            TxtCuentaLey.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            TxtCuentaLey.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            TxtCuentaLey.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            TxtCuentaLey.FillColor = Color.FromArgb(224, 224, 224);
+            TxtCuentaLey.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            TxtCuentaLey.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TxtCuentaLey.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            TxtCuentaLey.Location = new Point(772, 95);
+            TxtCuentaLey.Margin = new Padding(4);
+            TxtCuentaLey.Name = "TxtCuentaLey";
+            TxtCuentaLey.PasswordChar = '\0';
+            TxtCuentaLey.PlaceholderText = "";
+            TxtCuentaLey.SelectedText = "";
+            TxtCuentaLey.ShadowDecoration.CustomizableEdges = customizableEdges74;
+            TxtCuentaLey.Size = new Size(280, 35);
+            TxtCuentaLey.TabIndex = 23;
             // 
             // guna2HtmlLabel3
             // 
@@ -1212,7 +1218,6 @@
             CbContador.DisabledState.ForeColor = Color.Black;
             CbContador.DrawMode = DrawMode.OwnerDrawFixed;
             CbContador.DropDownStyle = ComboBoxStyle.DropDownList;
-            CbContador.Enabled = false;
             CbContador.FillColor = Color.FromArgb(224, 224, 224);
             CbContador.FocusedColor = Color.FromArgb(94, 148, 255);
             CbContador.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
@@ -1237,6 +1242,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmInstituciones_";
             Text = "FrmInstituciones_";
+            Load += FrmInstituciones__Load;
             BarraMenu.ResumeLayout(false);
             BarraMenu.PerformLayout();
             Espaciador7.ResumeLayout(false);
@@ -1298,7 +1304,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
         private Guna.UI2.WinForms.Guna2TextBox TxtCedula;
-        private Guna.UI2.WinForms.Guna2TextBox CbCuentaLey6746;
+        private Guna.UI2.WinForms.Guna2TextBox TxtCuentaLey;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
@@ -1306,13 +1312,13 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
         private Guna.UI2.WinForms.Guna2ComboBox CbContador;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
         private Guna.UI2.WinForms.Guna2ComboBox CbTipo;
         private Guna.UI2.WinForms.Guna2TextBox TxtCedulaJurica;
         private Guna.UI2.WinForms.Guna2TextBox TxtInstitucion;
-        private Guna.UI2.WinForms.Guna2TextBox TxtCircuito;
         private Guna.UI2.WinForms.Guna2TextBox TxtCodigo;
+        private Guna.UI2.WinForms.Guna2ComboBox cbCircuito;
+        private DataGridViewTextBoxColumn cmCodigo;
+        private DataGridViewTextBoxColumn cmInstitucion;
+        private DataGridViewTextBoxColumn cmContador;
     }
 }

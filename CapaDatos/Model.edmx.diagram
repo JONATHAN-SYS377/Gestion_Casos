@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bba71034c60a4a10aafef6adee7968d6" Name="Diagram1">
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.TBColaborador" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.TBContador" Width="1.5" PointX="3" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.TBEntregaCasos" Width="1.5" PointX="7.5" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.TBInstitucion" Width="1.5" PointX="5.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.TBMensajero" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.TBPersona" Width="1.5" PointX="0.75" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.TBRevision" Width="1.5" PointX="5.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.TBTipoInstitucion" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.TBTipoPago" Width="1.5" PointX="5.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.TBTipoRecepcion" Width="1.5" PointX="5.25" PointY="17" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBSY_A_Y_M_CONSULTORESModel.TBUsuario" Width="1.5" PointX="3" PointY="14" IsExpanded="true" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBColabor__Ident__25518C17" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBRevisio__Trami__47A6A41B" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBContado__Ident__2BFE89A6" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBInstitu__Conta__395884C4" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBEntrega__Asign__58D1301D" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBEntrega__Junta__56E8E7AB" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBEntrega__Mensa__55009F39" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBEntrega__Recep__55F4C372" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBEntrega__TipoP__57DD0BE4" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBInstitu__TipoF__3A4CA8FD" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBRevisio__Codig__489AC854" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBMensaje__Ident__339FAB6E" ManuallyRouted="false" />
+        <AssociationConnector Association="DBSY_A_Y_M_CONSULTORESModel.FK__TBUsuario__Ident__1F98B2C1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

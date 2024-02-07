@@ -807,7 +807,7 @@
             // FotoPerfil
             // 
             FotoPerfil.Dock = DockStyle.Fill;
-            FotoPerfil.Image = Properties.Resources._127745147_gettyimages_1443193307;
+            FotoPerfil.Image = Properties.Resources.user__3_;
             FotoPerfil.Location = new Point(0, 4);
             FotoPerfil.Name = "FotoPerfil";
             FotoPerfil.Size = new Size(38, 38);
@@ -959,7 +959,7 @@
             BackColor = Color.FromArgb(33, 36, 41);
             ClientSize = new Size(1366, 716);
             Controls.Add(PanelPrincipal);
-            MinimumSize = new Size(1366, 716);
+            MinimumSize = new Size(1364, 716);
             Name = "FrmPrincipal_";
             Text = "FrmPrincipal";
             Load += FrmPrincipal__Load;
