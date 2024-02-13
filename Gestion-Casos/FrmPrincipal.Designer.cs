@@ -99,7 +99,6 @@
             BtnMaximizar = new Guna.UI2.WinForms.Guna2GradientButton();
             BtnClose = new Guna.UI2.WinForms.Guna2GradientButton();
             BtnAMenuHam = new Guna.UI2.WinForms.Guna2Button();
-            SlideBar = new System.Windows.Forms.Timer(components);
             Menu = new Guna.UI2.WinForms.Guna2ShadowPanel();
             SubMenu8 = new Guna.UI2.WinForms.Guna2Panel();
             BtnConfiguraciones = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -136,6 +135,7 @@
             guna2DragControl7 = new Guna.UI2.WinForms.Guna2DragControl(components);
             SubMenuTrancicion = new System.Windows.Forms.Timer(components);
             guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(components);
+            SlideBar = new System.Windows.Forms.Timer(components);
             BarraTitulo.SuspendLayout();
             guna2Panel3.SuspendLayout();
             guna2Panel2.SuspendLayout();
@@ -398,11 +398,6 @@
             BtnAMenuHam.TabIndex = 13;
             BtnAMenuHam.TextAlign = HorizontalAlignment.Left;
             BtnAMenuHam.Click += BtnAMenuHam_Click;
-            // 
-            // SlideBar
-            // 
-            SlideBar.Interval = 5;
-            SlideBar.Tick += SlideBar_Tick;
             // 
             // Menu
             // 
@@ -1000,6 +995,11 @@
             guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // SlideBar
+            // 
+            SlideBar.Interval = 5;
+            SlideBar.Tick += SlideBar_Tick;
+            // 
             // FrmPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -1037,7 +1037,6 @@
 
         private Panel BarraTitulo;
         private Guna.UI2.WinForms.Guna2Button BtnAMenuHam;
-        private System.Windows.Forms.Timer SlideBar;
         private Guna.UI2.WinForms.Guna2ShadowPanel Menu;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
@@ -1088,5 +1087,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton BtnParametros;
         private Guna.UI2.WinForms.Guna2GradientButton BtnCasos;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private System.Windows.Forms.Timer SlideBar;
     }
 }

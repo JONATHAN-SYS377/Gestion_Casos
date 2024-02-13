@@ -148,34 +148,36 @@
             cmInstitucion = new DataGridViewTextBoxColumn();
             cmContador = new DataGridViewTextBoxColumn();
             PanelControles = new Guna.UI2.WinForms.Guna2Panel();
-            cbCircuito = new Guna.UI2.WinForms.Guna2ComboBox();
-            CbTipo = new Guna.UI2.WinForms.Guna2ComboBox();
-            TxtCedulaJurica = new Guna.UI2.WinForms.Guna2TextBox();
-            TxtInstitucion = new Guna.UI2.WinForms.Guna2TextBox();
-            TxtCodigo = new Guna.UI2.WinForms.Guna2TextBox();
-            CbTipoCuenta = new Guna.UI2.WinForms.Guna2ComboBox();
-            guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            CbDiaRuta = new Guna.UI2.WinForms.Guna2ComboBox();
-            guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            flowLayoutPanel1 = new FlowLayoutPanel();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            TxtContacto = new Guna.UI2.WinForms.Guna2TextBox();
+            TxtCodigo = new Guna.UI2.WinForms.Guna2TextBox();
             guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            cbCircuito = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            TxtInstitucion = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            TxtCedulaJurica = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            CbTipo = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            CbContador = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            CbDiaRuta = new Guna.UI2.WinForms.Guna2ComboBox();
             guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             TxtCuentaLey = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            CbTipoCuenta = new Guna.UI2.WinForms.Guna2ComboBox();
+            guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            TxtContacto = new Guna.UI2.WinForms.Guna2TextBox();
+            guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             TxtNumContacto = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            CbContador = new Guna.UI2.WinForms.Guna2ComboBox();
             BarraMenu.SuspendLayout();
             Espaciador7.SuspendLayout();
             PanelPrincipal.SuspendLayout();
             PanelDataGridView.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DgvInstituciones).BeginInit();
             PanelControles.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // BarraMenu
@@ -214,7 +216,7 @@
             BarraMenu.Name = "BarraMenu";
             BarraMenu.Padding = new Padding(15, 6, 0, 6);
             BarraMenu.ShadowDecoration.CustomizableEdges = customizableEdges52;
-            BarraMenu.Size = new Size(1074, 46);
+            BarraMenu.Size = new Size(1614, 46);
             BarraMenu.TabIndex = 3;
             // 
             // BtnExportarExcell
@@ -704,11 +706,11 @@
             PanelTab2BotonesBoton.BackColor = Color.Transparent;
             PanelTab2BotonesBoton.CustomizableEdges = customizableEdges53;
             PanelTab2BotonesBoton.Dock = DockStyle.Bottom;
-            PanelTab2BotonesBoton.Location = new Point(0, 604);
+            PanelTab2BotonesBoton.Location = new Point(0, 977);
             PanelTab2BotonesBoton.Name = "PanelTab2BotonesBoton";
             PanelTab2BotonesBoton.Padding = new Padding(0, 5, 20, 5);
             PanelTab2BotonesBoton.ShadowDecoration.CustomizableEdges = customizableEdges54;
-            PanelTab2BotonesBoton.Size = new Size(1074, 15);
+            PanelTab2BotonesBoton.Size = new Size(1614, 15);
             PanelTab2BotonesBoton.TabIndex = 17;
             // 
             // PanelPrincipal
@@ -720,7 +722,7 @@
             PanelPrincipal.Location = new Point(0, 46);
             PanelPrincipal.Name = "PanelPrincipal";
             PanelPrincipal.ShadowDecoration.CustomizableEdges = customizableEdges82;
-            PanelPrincipal.Size = new Size(1074, 558);
+            PanelPrincipal.Size = new Size(1614, 931);
             PanelPrincipal.TabIndex = 18;
             // 
             // PanelDataGridView
@@ -732,7 +734,7 @@
             PanelDataGridView.Name = "PanelDataGridView";
             PanelDataGridView.Padding = new Padding(5);
             PanelDataGridView.ShadowDecoration.CustomizableEdges = customizableEdges56;
-            PanelDataGridView.Size = new Size(1074, 353);
+            PanelDataGridView.Size = new Size(1614, 726);
             PanelDataGridView.TabIndex = 27;
             // 
             // DgvInstituciones
@@ -750,7 +752,7 @@
             dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             DgvInstituciones.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            DgvInstituciones.ColumnHeadersHeight = 22;
+            DgvInstituciones.ColumnHeadersHeight = 35;
             DgvInstituciones.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             DgvInstituciones.Columns.AddRange(new DataGridViewColumn[] { cmCodigo, cmInstitucion, cmContador });
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -767,7 +769,8 @@
             DgvInstituciones.Name = "DgvInstituciones";
             DgvInstituciones.ReadOnly = true;
             DgvInstituciones.RowHeadersVisible = false;
-            DgvInstituciones.Size = new Size(1064, 343);
+            DgvInstituciones.RowTemplate.Height = 30;
+            DgvInstituciones.Size = new Size(1604, 716);
             DgvInstituciones.TabIndex = 0;
             DgvInstituciones.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.FeterRiver;
             DgvInstituciones.ThemeStyle.AlternatingRowsStyle.BackColor = Color.FromArgb(194, 224, 244);
@@ -782,13 +785,13 @@
             DgvInstituciones.ThemeStyle.HeaderStyle.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             DgvInstituciones.ThemeStyle.HeaderStyle.ForeColor = Color.White;
             DgvInstituciones.ThemeStyle.HeaderStyle.HeaightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            DgvInstituciones.ThemeStyle.HeaderStyle.Height = 22;
+            DgvInstituciones.ThemeStyle.HeaderStyle.Height = 35;
             DgvInstituciones.ThemeStyle.ReadOnly = true;
             DgvInstituciones.ThemeStyle.RowsStyle.BackColor = Color.FromArgb(214, 234, 247);
             DgvInstituciones.ThemeStyle.RowsStyle.BorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
             DgvInstituciones.ThemeStyle.RowsStyle.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             DgvInstituciones.ThemeStyle.RowsStyle.ForeColor = Color.Black;
-            DgvInstituciones.ThemeStyle.RowsStyle.Height = 25;
+            DgvInstituciones.ThemeStyle.RowsStyle.Height = 30;
             DgvInstituciones.ThemeStyle.RowsStyle.SelectionBackColor = Color.FromArgb(119, 186, 231);
             DgvInstituciones.ThemeStyle.RowsStyle.SelectionForeColor = Color.Black;
             // 
@@ -812,42 +815,102 @@
             // 
             // PanelControles
             // 
-            PanelControles.Controls.Add(cbCircuito);
-            PanelControles.Controls.Add(CbTipo);
-            PanelControles.Controls.Add(TxtCedulaJurica);
-            PanelControles.Controls.Add(TxtInstitucion);
-            PanelControles.Controls.Add(TxtCodigo);
-            PanelControles.Controls.Add(CbTipoCuenta);
-            PanelControles.Controls.Add(guna2HtmlLabel8);
-            PanelControles.Controls.Add(guna2HtmlLabel7);
-            PanelControles.Controls.Add(CbDiaRuta);
-            PanelControles.Controls.Add(guna2HtmlLabel6);
-            PanelControles.Controls.Add(guna2HtmlLabel1);
-            PanelControles.Controls.Add(guna2HtmlLabel5);
-            PanelControles.Controls.Add(TxtContacto);
-            PanelControles.Controls.Add(guna2HtmlLabel2);
-            PanelControles.Controls.Add(guna2HtmlLabel18);
-            PanelControles.Controls.Add(TxtCuentaLey);
-            PanelControles.Controls.Add(guna2HtmlLabel3);
-            PanelControles.Controls.Add(guna2HtmlLabel17);
-            PanelControles.Controls.Add(TxtNumContacto);
-            PanelControles.Controls.Add(guna2HtmlLabel4);
-            PanelControles.Controls.Add(guna2HtmlLabel15);
-            PanelControles.Controls.Add(CbContador);
+            PanelControles.Controls.Add(flowLayoutPanel1);
             PanelControles.CustomizableEdges = customizableEdges79;
             PanelControles.Dock = DockStyle.Top;
             PanelControles.Location = new Point(0, 0);
             PanelControles.Name = "PanelControles";
             PanelControles.ShadowDecoration.CustomizableEdges = customizableEdges80;
-            PanelControles.Size = new Size(1074, 205);
+            PanelControles.Size = new Size(1614, 205);
             PanelControles.TabIndex = 26;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.AutoScroll = true;
+            flowLayoutPanel1.Controls.Add(guna2HtmlLabel1);
+            flowLayoutPanel1.Controls.Add(TxtCodigo);
+            flowLayoutPanel1.Controls.Add(guna2HtmlLabel2);
+            flowLayoutPanel1.Controls.Add(cbCircuito);
+            flowLayoutPanel1.Controls.Add(guna2HtmlLabel3);
+            flowLayoutPanel1.Controls.Add(TxtInstitucion);
+            flowLayoutPanel1.Controls.Add(guna2HtmlLabel4);
+            flowLayoutPanel1.Controls.Add(TxtCedulaJurica);
+            flowLayoutPanel1.Controls.Add(guna2HtmlLabel15);
+            flowLayoutPanel1.Controls.Add(CbTipo);
+            flowLayoutPanel1.Controls.Add(guna2HtmlLabel17);
+            flowLayoutPanel1.Controls.Add(CbContador);
+            flowLayoutPanel1.Controls.Add(guna2HtmlLabel6);
+            flowLayoutPanel1.Controls.Add(CbDiaRuta);
+            flowLayoutPanel1.Controls.Add(guna2HtmlLabel18);
+            flowLayoutPanel1.Controls.Add(TxtCuentaLey);
+            flowLayoutPanel1.Controls.Add(guna2HtmlLabel8);
+            flowLayoutPanel1.Controls.Add(CbTipoCuenta);
+            flowLayoutPanel1.Controls.Add(guna2HtmlLabel5);
+            flowLayoutPanel1.Controls.Add(TxtContacto);
+            flowLayoutPanel1.Controls.Add(guna2HtmlLabel7);
+            flowLayoutPanel1.Controls.Add(TxtNumContacto);
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Padding = new Padding(3);
+            flowLayoutPanel1.Size = new Size(1614, 205);
+            flowLayoutPanel1.TabIndex = 39;
+            // 
+            // guna2HtmlLabel1
+            // 
+            guna2HtmlLabel1.BackColor = Color.Transparent;
+            guna2HtmlLabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel1.ForeColor = Color.White;
+            guna2HtmlLabel1.Location = new Point(8, 13);
+            guna2HtmlLabel1.Margin = new Padding(5, 10, 5, 3);
+            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            guna2HtmlLabel1.Size = new Size(53, 22);
+            guna2HtmlLabel1.TabIndex = 9;
+            guna2HtmlLabel1.Text = "Código";
+            guna2HtmlLabel1.TextAlignment = ContentAlignment.TopCenter;
+            // 
+            // TxtCodigo
+            // 
+            TxtCodigo.BorderRadius = 5;
+            TxtCodigo.CustomizableEdges = customizableEdges57;
+            TxtCodigo.DefaultText = "";
+            TxtCodigo.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            TxtCodigo.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            TxtCodigo.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            TxtCodigo.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            TxtCodigo.FillColor = Color.FromArgb(224, 224, 224);
+            TxtCodigo.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            TxtCodigo.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TxtCodigo.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            TxtCodigo.Location = new Point(70, 7);
+            TxtCodigo.Margin = new Padding(4);
+            TxtCodigo.Name = "TxtCodigo";
+            TxtCodigo.PasswordChar = '\0';
+            TxtCodigo.PlaceholderText = "";
+            TxtCodigo.SelectedText = "";
+            TxtCodigo.ShadowDecoration.CustomizableEdges = customizableEdges58;
+            TxtCodigo.Size = new Size(175, 35);
+            TxtCodigo.TabIndex = 33;
+            // 
+            // guna2HtmlLabel2
+            // 
+            guna2HtmlLabel2.BackColor = Color.Transparent;
+            guna2HtmlLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel2.ForeColor = Color.White;
+            guna2HtmlLabel2.Location = new Point(254, 13);
+            guna2HtmlLabel2.Margin = new Padding(5, 10, 5, 3);
+            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            guna2HtmlLabel2.Size = new Size(56, 22);
+            guna2HtmlLabel2.TabIndex = 13;
+            guna2HtmlLabel2.Text = "Circuito";
+            guna2HtmlLabel2.TextAlignment = ContentAlignment.TopCenter;
             // 
             // cbCircuito
             // 
             cbCircuito.BackColor = Color.Transparent;
             cbCircuito.BorderColor = Color.FromArgb(224, 224, 224);
             cbCircuito.BorderRadius = 5;
-            cbCircuito.CustomizableEdges = customizableEdges57;
+            cbCircuito.CustomizableEdges = customizableEdges59;
             cbCircuito.DisabledState.FillColor = SystemColors.ScrollBar;
             cbCircuito.DisabledState.ForeColor = Color.Black;
             cbCircuito.DrawMode = DrawMode.OwnerDrawFixed;
@@ -859,19 +922,104 @@
             cbCircuito.ForeColor = Color.Black;
             cbCircuito.ItemHeight = 30;
             cbCircuito.Items.AddRange(new object[] { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo" });
-            cbCircuito.Location = new Point(210, 26);
+            cbCircuito.Location = new Point(318, 6);
             cbCircuito.Name = "cbCircuito";
-            cbCircuito.ShadowDecoration.CustomizableEdges = customizableEdges58;
+            cbCircuito.ShadowDecoration.CustomizableEdges = customizableEdges60;
             cbCircuito.Size = new Size(175, 36);
             cbCircuito.TabIndex = 38;
             cbCircuito.TextAlign = HorizontalAlignment.Center;
+            // 
+            // guna2HtmlLabel3
+            // 
+            guna2HtmlLabel3.BackColor = Color.Transparent;
+            guna2HtmlLabel3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel3.ForeColor = Color.White;
+            guna2HtmlLabel3.Location = new Point(501, 13);
+            guna2HtmlLabel3.Margin = new Padding(5, 10, 5, 3);
+            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
+            guna2HtmlLabel3.Size = new Size(76, 22);
+            guna2HtmlLabel3.TabIndex = 15;
+            guna2HtmlLabel3.Text = "Institución";
+            guna2HtmlLabel3.TextAlignment = ContentAlignment.TopCenter;
+            // 
+            // TxtInstitucion
+            // 
+            TxtInstitucion.BorderRadius = 5;
+            TxtInstitucion.CustomizableEdges = customizableEdges61;
+            TxtInstitucion.DefaultText = "";
+            TxtInstitucion.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            TxtInstitucion.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            TxtInstitucion.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            TxtInstitucion.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            TxtInstitucion.FillColor = Color.FromArgb(224, 224, 224);
+            TxtInstitucion.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            TxtInstitucion.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TxtInstitucion.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            TxtInstitucion.Location = new Point(586, 7);
+            TxtInstitucion.Margin = new Padding(4);
+            TxtInstitucion.Name = "TxtInstitucion";
+            TxtInstitucion.PasswordChar = '\0';
+            TxtInstitucion.PlaceholderText = "";
+            TxtInstitucion.SelectedText = "";
+            TxtInstitucion.ShadowDecoration.CustomizableEdges = customizableEdges62;
+            TxtInstitucion.Size = new Size(404, 35);
+            TxtInstitucion.TabIndex = 35;
+            // 
+            // guna2HtmlLabel4
+            // 
+            guna2HtmlLabel4.BackColor = Color.Transparent;
+            guna2HtmlLabel4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel4.ForeColor = Color.White;
+            guna2HtmlLabel4.Location = new Point(999, 13);
+            guna2HtmlLabel4.Margin = new Padding(5, 10, 5, 3);
+            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
+            guna2HtmlLabel4.Size = new Size(111, 22);
+            guna2HtmlLabel4.TabIndex = 16;
+            guna2HtmlLabel4.Text = "Cédula Jurídica";
+            guna2HtmlLabel4.TextAlignment = ContentAlignment.TopCenter;
+            // 
+            // TxtCedulaJurica
+            // 
+            TxtCedulaJurica.BorderRadius = 5;
+            TxtCedulaJurica.CustomizableEdges = customizableEdges63;
+            TxtCedulaJurica.DefaultText = "";
+            TxtCedulaJurica.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            TxtCedulaJurica.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            TxtCedulaJurica.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            TxtCedulaJurica.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            TxtCedulaJurica.FillColor = Color.FromArgb(224, 224, 224);
+            TxtCedulaJurica.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            TxtCedulaJurica.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TxtCedulaJurica.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            TxtCedulaJurica.Location = new Point(1119, 7);
+            TxtCedulaJurica.Margin = new Padding(4);
+            TxtCedulaJurica.Name = "TxtCedulaJurica";
+            TxtCedulaJurica.PasswordChar = '\0';
+            TxtCedulaJurica.PlaceholderText = "";
+            TxtCedulaJurica.SelectedText = "";
+            TxtCedulaJurica.ShadowDecoration.CustomizableEdges = customizableEdges64;
+            TxtCedulaJurica.Size = new Size(225, 35);
+            TxtCedulaJurica.TabIndex = 36;
+            // 
+            // guna2HtmlLabel15
+            // 
+            guna2HtmlLabel15.BackColor = Color.Transparent;
+            guna2HtmlLabel15.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel15.ForeColor = Color.White;
+            guna2HtmlLabel15.Location = new Point(1353, 13);
+            guna2HtmlLabel15.Margin = new Padding(5, 10, 5, 3);
+            guna2HtmlLabel15.Name = "guna2HtmlLabel15";
+            guna2HtmlLabel15.Size = new Size(33, 22);
+            guna2HtmlLabel15.TabIndex = 18;
+            guna2HtmlLabel15.Text = "Tipo";
+            guna2HtmlLabel15.TextAlignment = ContentAlignment.TopCenter;
             // 
             // CbTipo
             // 
             CbTipo.BackColor = Color.Transparent;
             CbTipo.BorderColor = Color.FromArgb(224, 224, 224);
             CbTipo.BorderRadius = 5;
-            CbTipo.CustomizableEdges = customizableEdges59;
+            CbTipo.CustomizableEdges = customizableEdges65;
             CbTipo.DisabledState.FillColor = SystemColors.ScrollBar;
             CbTipo.DisabledState.ForeColor = Color.Black;
             CbTipo.DrawMode = DrawMode.OwnerDrawFixed;
@@ -883,129 +1031,60 @@
             CbTipo.ForeColor = Color.Black;
             CbTipo.ItemHeight = 30;
             CbTipo.Items.AddRange(new object[] { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo" });
-            CbTipo.Location = new Point(15, 94);
+            CbTipo.Location = new Point(1394, 6);
             CbTipo.Name = "CbTipo";
-            CbTipo.ShadowDecoration.CustomizableEdges = customizableEdges60;
+            CbTipo.ShadowDecoration.CustomizableEdges = customizableEdges66;
             CbTipo.Size = new Size(175, 36);
             CbTipo.TabIndex = 37;
             CbTipo.TextAlign = HorizontalAlignment.Center;
             // 
-            // TxtCedulaJurica
+            // guna2HtmlLabel17
             // 
-            TxtCedulaJurica.BorderRadius = 5;
-            TxtCedulaJurica.CustomizableEdges = customizableEdges61;
-            TxtCedulaJurica.DefaultText = "";
-            TxtCedulaJurica.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            TxtCedulaJurica.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            TxtCedulaJurica.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            TxtCedulaJurica.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            TxtCedulaJurica.FillColor = Color.FromArgb(224, 224, 224);
-            TxtCedulaJurica.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtCedulaJurica.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TxtCedulaJurica.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtCedulaJurica.Location = new Point(827, 27);
-            TxtCedulaJurica.Margin = new Padding(4);
-            TxtCedulaJurica.Name = "TxtCedulaJurica";
-            TxtCedulaJurica.PasswordChar = '\0';
-            TxtCedulaJurica.PlaceholderText = "";
-            TxtCedulaJurica.SelectedText = "";
-            TxtCedulaJurica.ShadowDecoration.CustomizableEdges = customizableEdges62;
-            TxtCedulaJurica.Size = new Size(225, 35);
-            TxtCedulaJurica.TabIndex = 36;
+            guna2HtmlLabel17.BackColor = Color.Transparent;
+            guna2HtmlLabel17.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel17.ForeColor = Color.White;
+            guna2HtmlLabel17.Location = new Point(6, 56);
+            guna2HtmlLabel17.Margin = new Padding(3, 10, 3, 3);
+            guna2HtmlLabel17.Name = "guna2HtmlLabel17";
+            guna2HtmlLabel17.Size = new Size(69, 22);
+            guna2HtmlLabel17.TabIndex = 20;
+            guna2HtmlLabel17.Text = "Contador";
+            guna2HtmlLabel17.TextAlignment = ContentAlignment.TopCenter;
             // 
-            // TxtInstitucion
+            // CbContador
             // 
-            TxtInstitucion.BorderRadius = 5;
-            TxtInstitucion.CustomizableEdges = customizableEdges63;
-            TxtInstitucion.DefaultText = "";
-            TxtInstitucion.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            TxtInstitucion.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            TxtInstitucion.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            TxtInstitucion.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            TxtInstitucion.FillColor = Color.FromArgb(224, 224, 224);
-            TxtInstitucion.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtInstitucion.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TxtInstitucion.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtInstitucion.Location = new Point(405, 27);
-            TxtInstitucion.Margin = new Padding(4);
-            TxtInstitucion.Name = "TxtInstitucion";
-            TxtInstitucion.PasswordChar = '\0';
-            TxtInstitucion.PlaceholderText = "";
-            TxtInstitucion.SelectedText = "";
-            TxtInstitucion.ShadowDecoration.CustomizableEdges = customizableEdges64;
-            TxtInstitucion.Size = new Size(404, 35);
-            TxtInstitucion.TabIndex = 35;
+            CbContador.BackColor = Color.Transparent;
+            CbContador.BorderColor = Color.FromArgb(224, 224, 224);
+            CbContador.BorderRadius = 5;
+            CbContador.CustomizableEdges = customizableEdges67;
+            CbContador.DisabledState.FillColor = SystemColors.ScrollBar;
+            CbContador.DisabledState.ForeColor = Color.Black;
+            CbContador.DrawMode = DrawMode.OwnerDrawFixed;
+            CbContador.DropDownStyle = ComboBoxStyle.DropDownList;
+            CbContador.FillColor = Color.FromArgb(224, 224, 224);
+            CbContador.FocusedColor = Color.FromArgb(94, 148, 255);
+            CbContador.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            CbContador.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CbContador.ForeColor = Color.Black;
+            CbContador.ItemHeight = 30;
+            CbContador.Location = new Point(81, 49);
+            CbContador.Name = "CbContador";
+            CbContador.ShadowDecoration.CustomizableEdges = customizableEdges68;
+            CbContador.Size = new Size(343, 36);
+            CbContador.TabIndex = 17;
             // 
-            // TxtCodigo
+            // guna2HtmlLabel6
             // 
-            TxtCodigo.BorderRadius = 5;
-            TxtCodigo.CustomizableEdges = customizableEdges65;
-            TxtCodigo.DefaultText = "";
-            TxtCodigo.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            TxtCodigo.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            TxtCodigo.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            TxtCodigo.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            TxtCodigo.FillColor = Color.FromArgb(224, 224, 224);
-            TxtCodigo.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtCodigo.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TxtCodigo.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtCodigo.Location = new Point(15, 27);
-            TxtCodigo.Margin = new Padding(4);
-            TxtCodigo.Name = "TxtCodigo";
-            TxtCodigo.PasswordChar = '\0';
-            TxtCodigo.PlaceholderText = "";
-            TxtCodigo.SelectedText = "";
-            TxtCodigo.ShadowDecoration.CustomizableEdges = customizableEdges66;
-            TxtCodigo.Size = new Size(175, 35);
-            TxtCodigo.TabIndex = 33;
-            // 
-            // CbTipoCuenta
-            // 
-            CbTipoCuenta.BackColor = Color.Transparent;
-            CbTipoCuenta.BorderColor = Color.FromArgb(224, 224, 224);
-            CbTipoCuenta.BorderRadius = 5;
-            CbTipoCuenta.CustomizableEdges = customizableEdges67;
-            CbTipoCuenta.DisabledState.FillColor = SystemColors.ScrollBar;
-            CbTipoCuenta.DisabledState.ForeColor = Color.Black;
-            CbTipoCuenta.DrawMode = DrawMode.OwnerDrawFixed;
-            CbTipoCuenta.DropDownStyle = ComboBoxStyle.DropDownList;
-            CbTipoCuenta.FillColor = Color.FromArgb(224, 224, 224);
-            CbTipoCuenta.FocusedColor = Color.FromArgb(94, 148, 255);
-            CbTipoCuenta.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            CbTipoCuenta.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CbTipoCuenta.ForeColor = Color.Black;
-            CbTipoCuenta.ItemHeight = 30;
-            CbTipoCuenta.Items.AddRange(new object[] { "Escuela", "Colegio" });
-            CbTipoCuenta.Location = new Point(669, 160);
-            CbTipoCuenta.Name = "CbTipoCuenta";
-            CbTipoCuenta.ShadowDecoration.CustomizableEdges = customizableEdges68;
-            CbTipoCuenta.Size = new Size(213, 36);
-            CbTipoCuenta.TabIndex = 32;
-            CbTipoCuenta.TextAlign = HorizontalAlignment.Center;
-            // 
-            // guna2HtmlLabel8
-            // 
-            guna2HtmlLabel8.BackColor = Color.Transparent;
-            guna2HtmlLabel8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel8.ForeColor = Color.White;
-            guna2HtmlLabel8.Location = new Point(669, 135);
-            guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            guna2HtmlLabel8.Size = new Size(111, 22);
-            guna2HtmlLabel8.TabIndex = 31;
-            guna2HtmlLabel8.Text = "Tipo de Cuenta";
-            guna2HtmlLabel8.TextAlignment = ContentAlignment.TopCenter;
-            // 
-            // guna2HtmlLabel7
-            // 
-            guna2HtmlLabel7.BackColor = Color.Transparent;
-            guna2HtmlLabel7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel7.ForeColor = Color.White;
-            guna2HtmlLabel7.Location = new Point(413, 135);
-            guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            guna2HtmlLabel7.Size = new Size(81, 22);
-            guna2HtmlLabel7.TabIndex = 30;
-            guna2HtmlLabel7.Text = "# Contacto";
-            guna2HtmlLabel7.TextAlignment = ContentAlignment.TopCenter;
+            guna2HtmlLabel6.BackColor = Color.Transparent;
+            guna2HtmlLabel6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel6.ForeColor = Color.White;
+            guna2HtmlLabel6.Location = new Point(430, 56);
+            guna2HtmlLabel6.Margin = new Padding(3, 10, 3, 3);
+            guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            guna2HtmlLabel6.Size = new Size(88, 22);
+            guna2HtmlLabel6.TabIndex = 29;
+            guna2HtmlLabel6.Text = "Dia de Ruta";
+            guna2HtmlLabel6.TextAlignment = ContentAlignment.TopCenter;
             // 
             // CbDiaRuta
             // 
@@ -1024,90 +1103,20 @@
             CbDiaRuta.ForeColor = Color.Black;
             CbDiaRuta.ItemHeight = 30;
             CbDiaRuta.Items.AddRange(new object[] { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo" });
-            CbDiaRuta.Location = new Point(573, 94);
+            CbDiaRuta.Location = new Point(524, 49);
             CbDiaRuta.Name = "CbDiaRuta";
             CbDiaRuta.ShadowDecoration.CustomizableEdges = customizableEdges70;
             CbDiaRuta.Size = new Size(175, 36);
             CbDiaRuta.TabIndex = 28;
             CbDiaRuta.TextAlign = HorizontalAlignment.Center;
             // 
-            // guna2HtmlLabel6
-            // 
-            guna2HtmlLabel6.BackColor = Color.Transparent;
-            guna2HtmlLabel6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel6.ForeColor = Color.White;
-            guna2HtmlLabel6.Location = new Point(573, 69);
-            guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            guna2HtmlLabel6.Size = new Size(88, 22);
-            guna2HtmlLabel6.TabIndex = 29;
-            guna2HtmlLabel6.Text = "Dia de Ruta";
-            guna2HtmlLabel6.TextAlignment = ContentAlignment.TopCenter;
-            // 
-            // guna2HtmlLabel1
-            // 
-            guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel1.ForeColor = Color.White;
-            guna2HtmlLabel1.Location = new Point(15, 3);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(53, 22);
-            guna2HtmlLabel1.TabIndex = 9;
-            guna2HtmlLabel1.Text = "Código";
-            guna2HtmlLabel1.TextAlignment = ContentAlignment.TopCenter;
-            // 
-            // guna2HtmlLabel5
-            // 
-            guna2HtmlLabel5.BackColor = Color.Transparent;
-            guna2HtmlLabel5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel5.ForeColor = Color.White;
-            guna2HtmlLabel5.Location = new Point(15, 135);
-            guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            guna2HtmlLabel5.Size = new Size(68, 22);
-            guna2HtmlLabel5.TabIndex = 24;
-            guna2HtmlLabel5.Text = "Contacto";
-            guna2HtmlLabel5.TextAlignment = ContentAlignment.TopCenter;
-            // 
-            // TxtContacto
-            // 
-            TxtContacto.BorderRadius = 5;
-            TxtContacto.CustomizableEdges = customizableEdges71;
-            TxtContacto.DefaultText = "";
-            TxtContacto.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            TxtContacto.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            TxtContacto.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            TxtContacto.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            TxtContacto.FillColor = Color.FromArgb(224, 224, 224);
-            TxtContacto.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtContacto.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            TxtContacto.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtContacto.Location = new Point(15, 161);
-            TxtContacto.Margin = new Padding(4);
-            TxtContacto.Name = "TxtContacto";
-            TxtContacto.PasswordChar = '\0';
-            TxtContacto.PlaceholderText = "";
-            TxtContacto.SelectedText = "";
-            TxtContacto.ShadowDecoration.CustomizableEdges = customizableEdges72;
-            TxtContacto.Size = new Size(370, 35);
-            TxtContacto.TabIndex = 25;
-            // 
-            // guna2HtmlLabel2
-            // 
-            guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel2.ForeColor = Color.White;
-            guna2HtmlLabel2.Location = new Point(210, 3);
-            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(56, 22);
-            guna2HtmlLabel2.TabIndex = 13;
-            guna2HtmlLabel2.Text = "Circuito";
-            guna2HtmlLabel2.TextAlignment = ContentAlignment.TopCenter;
-            // 
             // guna2HtmlLabel18
             // 
             guna2HtmlLabel18.BackColor = Color.Transparent;
             guna2HtmlLabel18.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             guna2HtmlLabel18.ForeColor = Color.White;
-            guna2HtmlLabel18.Location = new Point(772, 69);
+            guna2HtmlLabel18.Location = new Point(705, 56);
+            guna2HtmlLabel18.Margin = new Padding(3, 10, 3, 3);
             guna2HtmlLabel18.Name = "guna2HtmlLabel18";
             guna2HtmlLabel18.Size = new Size(124, 22);
             guna2HtmlLabel18.TabIndex = 22;
@@ -1117,7 +1126,7 @@
             // TxtCuentaLey
             // 
             TxtCuentaLey.BorderRadius = 5;
-            TxtCuentaLey.CustomizableEdges = customizableEdges73;
+            TxtCuentaLey.CustomizableEdges = customizableEdges71;
             TxtCuentaLey.DefaultText = "";
             TxtCuentaLey.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtCuentaLey.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -1127,44 +1136,106 @@
             TxtCuentaLey.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             TxtCuentaLey.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             TxtCuentaLey.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtCuentaLey.Location = new Point(772, 95);
+            TxtCuentaLey.Location = new Point(836, 50);
             TxtCuentaLey.Margin = new Padding(4);
             TxtCuentaLey.Name = "TxtCuentaLey";
             TxtCuentaLey.PasswordChar = '\0';
             TxtCuentaLey.PlaceholderText = "";
             TxtCuentaLey.SelectedText = "";
-            TxtCuentaLey.ShadowDecoration.CustomizableEdges = customizableEdges74;
+            TxtCuentaLey.ShadowDecoration.CustomizableEdges = customizableEdges72;
             TxtCuentaLey.Size = new Size(280, 35);
             TxtCuentaLey.TabIndex = 23;
             // 
-            // guna2HtmlLabel3
+            // guna2HtmlLabel8
             // 
-            guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel3.ForeColor = Color.White;
-            guna2HtmlLabel3.Location = new Point(405, 3);
-            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(76, 22);
-            guna2HtmlLabel3.TabIndex = 15;
-            guna2HtmlLabel3.Text = "Institución";
-            guna2HtmlLabel3.TextAlignment = ContentAlignment.TopCenter;
+            guna2HtmlLabel8.BackColor = Color.Transparent;
+            guna2HtmlLabel8.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel8.ForeColor = Color.White;
+            guna2HtmlLabel8.Location = new Point(1123, 56);
+            guna2HtmlLabel8.Margin = new Padding(3, 10, 3, 3);
+            guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            guna2HtmlLabel8.Size = new Size(111, 22);
+            guna2HtmlLabel8.TabIndex = 31;
+            guna2HtmlLabel8.Text = "Tipo de Cuenta";
+            guna2HtmlLabel8.TextAlignment = ContentAlignment.TopCenter;
             // 
-            // guna2HtmlLabel17
+            // CbTipoCuenta
             // 
-            guna2HtmlLabel17.BackColor = Color.Transparent;
-            guna2HtmlLabel17.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel17.ForeColor = Color.White;
-            guna2HtmlLabel17.Location = new Point(210, 69);
-            guna2HtmlLabel17.Name = "guna2HtmlLabel17";
-            guna2HtmlLabel17.Size = new Size(69, 22);
-            guna2HtmlLabel17.TabIndex = 20;
-            guna2HtmlLabel17.Text = "Contador";
-            guna2HtmlLabel17.TextAlignment = ContentAlignment.TopCenter;
+            CbTipoCuenta.BackColor = Color.Transparent;
+            CbTipoCuenta.BorderColor = Color.FromArgb(224, 224, 224);
+            CbTipoCuenta.BorderRadius = 5;
+            CbTipoCuenta.CustomizableEdges = customizableEdges73;
+            CbTipoCuenta.DisabledState.FillColor = SystemColors.ScrollBar;
+            CbTipoCuenta.DisabledState.ForeColor = Color.Black;
+            CbTipoCuenta.DrawMode = DrawMode.OwnerDrawFixed;
+            CbTipoCuenta.DropDownStyle = ComboBoxStyle.DropDownList;
+            CbTipoCuenta.FillColor = Color.FromArgb(224, 224, 224);
+            CbTipoCuenta.FocusedColor = Color.FromArgb(94, 148, 255);
+            CbTipoCuenta.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            CbTipoCuenta.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            CbTipoCuenta.ForeColor = Color.Black;
+            CbTipoCuenta.ItemHeight = 30;
+            CbTipoCuenta.Items.AddRange(new object[] { "Escuela", "Colegio" });
+            CbTipoCuenta.Location = new Point(1240, 49);
+            CbTipoCuenta.Name = "CbTipoCuenta";
+            CbTipoCuenta.ShadowDecoration.CustomizableEdges = customizableEdges74;
+            CbTipoCuenta.Size = new Size(213, 36);
+            CbTipoCuenta.TabIndex = 32;
+            CbTipoCuenta.TextAlign = HorizontalAlignment.Center;
+            // 
+            // guna2HtmlLabel5
+            // 
+            guna2HtmlLabel5.BackColor = Color.Transparent;
+            guna2HtmlLabel5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel5.ForeColor = Color.White;
+            guna2HtmlLabel5.Location = new Point(1459, 56);
+            guna2HtmlLabel5.Margin = new Padding(3, 10, 3, 3);
+            guna2HtmlLabel5.Name = "guna2HtmlLabel5";
+            guna2HtmlLabel5.Size = new Size(68, 22);
+            guna2HtmlLabel5.TabIndex = 24;
+            guna2HtmlLabel5.Text = "Contacto";
+            guna2HtmlLabel5.TextAlignment = ContentAlignment.TopCenter;
+            // 
+            // TxtContacto
+            // 
+            TxtContacto.BorderRadius = 5;
+            TxtContacto.CustomizableEdges = customizableEdges75;
+            TxtContacto.DefaultText = "";
+            TxtContacto.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
+            TxtContacto.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
+            TxtContacto.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
+            TxtContacto.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
+            TxtContacto.FillColor = Color.FromArgb(224, 224, 224);
+            TxtContacto.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
+            TxtContacto.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            TxtContacto.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
+            TxtContacto.Location = new Point(7, 93);
+            TxtContacto.Margin = new Padding(4);
+            TxtContacto.Name = "TxtContacto";
+            TxtContacto.PasswordChar = '\0';
+            TxtContacto.PlaceholderText = "";
+            TxtContacto.SelectedText = "";
+            TxtContacto.ShadowDecoration.CustomizableEdges = customizableEdges76;
+            TxtContacto.Size = new Size(370, 35);
+            TxtContacto.TabIndex = 25;
+            // 
+            // guna2HtmlLabel7
+            // 
+            guna2HtmlLabel7.BackColor = Color.Transparent;
+            guna2HtmlLabel7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            guna2HtmlLabel7.ForeColor = Color.White;
+            guna2HtmlLabel7.Location = new Point(384, 99);
+            guna2HtmlLabel7.Margin = new Padding(3, 10, 3, 3);
+            guna2HtmlLabel7.Name = "guna2HtmlLabel7";
+            guna2HtmlLabel7.Size = new Size(81, 22);
+            guna2HtmlLabel7.TabIndex = 30;
+            guna2HtmlLabel7.Text = "# Contacto";
+            guna2HtmlLabel7.TextAlignment = ContentAlignment.TopCenter;
             // 
             // TxtNumContacto
             // 
             TxtNumContacto.BorderRadius = 5;
-            TxtNumContacto.CustomizableEdges = customizableEdges75;
+            TxtNumContacto.CustomizableEdges = customizableEdges77;
             TxtNumContacto.DefaultText = "";
             TxtNumContacto.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
             TxtNumContacto.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
@@ -1174,68 +1245,22 @@
             TxtNumContacto.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
             TxtNumContacto.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             TxtNumContacto.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            TxtNumContacto.Location = new Point(413, 161);
+            TxtNumContacto.Location = new Point(472, 93);
             TxtNumContacto.Margin = new Padding(4);
             TxtNumContacto.Name = "TxtNumContacto";
             TxtNumContacto.PasswordChar = '\0';
             TxtNumContacto.PlaceholderText = "";
             TxtNumContacto.SelectedText = "";
-            TxtNumContacto.ShadowDecoration.CustomizableEdges = customizableEdges76;
+            TxtNumContacto.ShadowDecoration.CustomizableEdges = customizableEdges78;
             TxtNumContacto.Size = new Size(225, 35);
             TxtNumContacto.TabIndex = 21;
-            // 
-            // guna2HtmlLabel4
-            // 
-            guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel4.ForeColor = Color.White;
-            guna2HtmlLabel4.Location = new Point(827, 3);
-            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(111, 22);
-            guna2HtmlLabel4.TabIndex = 16;
-            guna2HtmlLabel4.Text = "Cédula Jurídica";
-            guna2HtmlLabel4.TextAlignment = ContentAlignment.TopCenter;
-            // 
-            // guna2HtmlLabel15
-            // 
-            guna2HtmlLabel15.BackColor = Color.Transparent;
-            guna2HtmlLabel15.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel15.ForeColor = Color.White;
-            guna2HtmlLabel15.Location = new Point(15, 69);
-            guna2HtmlLabel15.Name = "guna2HtmlLabel15";
-            guna2HtmlLabel15.Size = new Size(33, 22);
-            guna2HtmlLabel15.TabIndex = 18;
-            guna2HtmlLabel15.Text = "Tipo";
-            guna2HtmlLabel15.TextAlignment = ContentAlignment.TopCenter;
-            // 
-            // CbContador
-            // 
-            CbContador.BackColor = Color.Transparent;
-            CbContador.BorderColor = Color.FromArgb(224, 224, 224);
-            CbContador.BorderRadius = 5;
-            CbContador.CustomizableEdges = customizableEdges77;
-            CbContador.DisabledState.FillColor = SystemColors.ScrollBar;
-            CbContador.DisabledState.ForeColor = Color.Black;
-            CbContador.DrawMode = DrawMode.OwnerDrawFixed;
-            CbContador.DropDownStyle = ComboBoxStyle.DropDownList;
-            CbContador.FillColor = Color.FromArgb(224, 224, 224);
-            CbContador.FocusedColor = Color.FromArgb(94, 148, 255);
-            CbContador.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            CbContador.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            CbContador.ForeColor = Color.Black;
-            CbContador.ItemHeight = 30;
-            CbContador.Location = new Point(210, 94);
-            CbContador.Name = "CbContador";
-            CbContador.ShadowDecoration.CustomizableEdges = customizableEdges78;
-            CbContador.Size = new Size(343, 36);
-            CbContador.TabIndex = 17;
             // 
             // FrmInstituciones_
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(41, 79, 116);
-            ClientSize = new Size(1074, 619);
+            ClientSize = new Size(1614, 992);
             Controls.Add(PanelPrincipal);
             Controls.Add(PanelTab2BotonesBoton);
             Controls.Add(BarraMenu);
@@ -1250,7 +1275,8 @@
             PanelDataGridView.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)DgvInstituciones).EndInit();
             PanelControles.ResumeLayout(false);
-            PanelControles.PerformLayout();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -1320,5 +1346,6 @@
         private DataGridViewTextBoxColumn cmCodigo;
         private DataGridViewTextBoxColumn cmInstitucion;
         private DataGridViewTextBoxColumn cmContador;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }

@@ -3,6 +3,11 @@ using CapaUtilidades.Enumeradores;
 using CapaNegocios;
 using CapaEntidades;
 using System.Windows.Forms;
+using System.Collections.Generic;
+using System;
+using System.IO;
+using System.Drawing;
+using Gestion_Casos.Parametros.Usuarios;
 
 
 namespace Gestion_Casos.Parametros
@@ -34,23 +39,23 @@ namespace Gestion_Casos.Parametros
         }
         private void loadCombobox()
         {
-            cbTipoCedula.DataSource = Enum.GetValues(typeof(Enums.TipoIdentificacion));
+            cbTypeCedula.DataSource = Enum.GetValues(typeof(Enums.TipoIdentificacion));
             cbTipoUsuario.DataSource = Enum.GetValues(typeof(Enums.TipoUsuario));
-            cbTipoCedula.SelectedIndex = 0;
+            cbTypeCedula.SelectedIndex = 0;
             cbTipoUsuario.SelectedIndex = 0;
         }
 
         private void clearfrm()
         {
             cbTipoUsuario.Enabled = true;
-            cbTipoCedula.Enabled = true;
+            cbTypeCedula.Enabled = true;
             TxtCedula.Enabled = true;
             TxtNombre.Enabled = true;
             TxtPrimerApellido.Enabled = true;
             TxtSegundoApellido.Enabled = true;
             TxtContrasenna.Enabled = true;
             TxtCarnet.Enabled = true;
-            cbTipoCedula.Refresh();
+            cbTypeCedula.Refresh();
             cbTipoUsuario.Refresh();
             TxtCedula.Clear();
             TxtNombre.Clear();
@@ -65,7 +70,7 @@ namespace Gestion_Casos.Parametros
         private void Enabledfrm(bool status)
         {
             cbTipoUsuario.Enabled = status;
-            cbTipoCedula.Enabled = status;
+            cbTypeCedula.Enabled = status;
             TxtCedula.Enabled = status;
             TxtNombre.Enabled = status;
             TxtPrimerApellido.Enabled = status;
@@ -413,7 +418,7 @@ namespace Gestion_Casos.Parametros
             persona.Nombre = TxtNombre.Text;
             persona.PrimerApellido = TxtPrimerApellido.Text;
             persona.SegundoApellido = TxtSegundoApellido.Text;
-            persona.TipoIdentificacion = (int)Enum.Parse(typeof(Enums.TipoIdentificacion), cbTipoCedula.SelectedValue.ToString());
+            persona.TipoIdentificacion = (int)Enum.Parse(typeof(Enums.TipoIdentificacion), cbTypeCedula.SelectedValue.ToString());
             persona.FechaUltimaModificacion = DateTime.Now;
             persona.FechaCreacion = DateTime.Now;
             persona.UserUltimaModificacion = "admin";
@@ -473,7 +478,7 @@ namespace Gestion_Casos.Parametros
             TxtPrimerApellido.Text = value.TBPersona.PrimerApellido.ToString();
             TxtSegundoApellido.Text = value.TBPersona.SegundoApellido.ToString();
             TxtContrasenna.Text = value.Contrasena.ToString();
-            cbTipoCedula.SelectedItem = (Enums.TipoIdentificacion)value.TBPersona.TipoIdentificacion;
+            cbTypeCedula.SelectedItem = (Enums.TipoIdentificacion)value.TBPersona.TipoIdentificacion;
             cbTipoUsuario.SelectedItem = (Enums.TipoUsuario)Enum.Parse(typeof(Enums.TipoUsuario), value.Rol);
             if (value.Rol == TipoUsuario.Contador.ToString() || value.Rol == TipoUsuario.Admi.ToString())
             {
@@ -600,12 +605,12 @@ namespace Gestion_Casos.Parametros
             if ((TipoUsuario)cbTipoUsuario.SelectedValue != TipoUsuario.Tramitador)
             {
                 TxtCarnet.Visible = true;
-                guna2HtmlLabel3.Visible = true;
+                LblCarnet.Visible = true;
             }
             else
             {
                 TxtCarnet.Visible = false;
-                guna2HtmlLabel3.Visible = false;
+                LblCarnet.Visible = false;
             }
         }
         private void loadAllUser()
@@ -748,6 +753,11 @@ namespace Gestion_Casos.Parametros
             }
         }
 
+        private void BtnRestablecer_Click(object sender, EventArgs e)
+        {
+            FrmRestaurarUsuarios frmRestaurarUsuarios = new FrmRestaurarUsuarios();
+            frmRestaurarUsuarios.ShowDialog();  
+        }
     }
 }
 

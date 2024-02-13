@@ -31,7 +31,7 @@ namespace Gestion_Casos.Casos
         {
             InitializeComponent();
             DtpFecha.Value = DateTime.Now;
-            
+
         }
 
         private void TxtBuscar_TextChanged(object sender, EventArgs e)
@@ -88,7 +88,7 @@ namespace Gestion_Casos.Casos
             }
             else
             {
-                Metodos_Funciones.InhabilitarTab(PanelRevision, BtnRevision, PanelRevisado, BtnRevisado,PanelPorEntregar, BtnPorEntregar, PanelEntregado, BtnEntregado);
+                Metodos_Funciones.InhabilitarTab(PanelRevision, BtnRevision, PanelRevisado, BtnRevisado, PanelPorEntregar, BtnPorEntregar, PanelEntregado, BtnEntregado);
             }
         }
 
@@ -96,12 +96,12 @@ namespace Gestion_Casos.Casos
 
         private void BtnRevision_Click(object sender, EventArgs e)
         {
-            Metodos_Funciones.mostrar_ocultar_panel(PanelRevision, PanelRevisado,PanelPorEntregar, PanelEntregado, BtnRevision,BtnRevisado, BtnPorEntregar, BtnEntregado, PanelContenedorTabControl);
+            Metodos_Funciones.mostrar_ocultar_panel(PanelRevision, PanelRevisado, PanelPorEntregar, PanelEntregado, BtnRevision, BtnRevisado, BtnPorEntregar, BtnEntregado, PanelContenedorTabControl);
         }
 
         private void BtnPorEntregar_Click(object sender, EventArgs e)
         {
-            Metodos_Funciones.mostrar_ocultar_panel(PanelPorEntregar, PanelRevision,PanelRevisado, PanelEntregado, BtnPorEntregar, BtnRevision,BtnRevisado, BtnEntregado, PanelContenedorTabControl);
+            Metodos_Funciones.mostrar_ocultar_panel(PanelPorEntregar, PanelRevision, PanelRevisado, PanelEntregado, BtnPorEntregar, BtnRevision, BtnRevisado, BtnEntregado, PanelContenedorTabControl);
         }
 
         private void BtnEntregado_Click(object sender, EventArgs e)
@@ -200,8 +200,21 @@ namespace Gestion_Casos.Casos
 
         private void BtnRevisado_Click(object sender, EventArgs e)
         {
-            Metodos_Funciones.mostrar_ocultar_panel(PanelRevisado,PanelRevision, PanelPorEntregar, PanelEntregado,BtnRevisado, BtnRevision, BtnPorEntregar, BtnEntregado, PanelContenedorTabControl);
+            Metodos_Funciones.mostrar_ocultar_panel(PanelRevisado, PanelRevision, PanelPorEntregar, PanelEntregado, BtnRevisado, BtnRevision, BtnPorEntregar, BtnEntregado, PanelContenedorTabControl);
 
+        }
+
+        private void CheckOtros_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CheckOtros.Checked)
+            {
+                TxtOtros.Visible = true;
+            }
+            else
+            {
+                TxtOtros.Visible =false;
+
+            }
         }
     }
 }

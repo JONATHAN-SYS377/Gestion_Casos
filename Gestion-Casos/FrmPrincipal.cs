@@ -175,8 +175,8 @@ namespace Gestion_Casos
             if (SideBarExpand)
             {
                 Menu.Width = 90;
-                SideBarExpand = false;
-                SlideBar.Stop();
+                //SideBarExpand = false;
+                //SlideBar.Stop();
                 //if (Menu.Width <= 85)
                 //{
 
@@ -186,8 +186,8 @@ namespace Gestion_Casos
             else
             {
                 Menu.Width = 290;
-                SideBarExpand = true;
-                SlideBar.Stop();
+                //SideBarExpand = true;
+                //SlideBar.Stop();
                 ShowButtonText();
                 //if (Menu.Width >= 290)
                 //{
@@ -198,7 +198,28 @@ namespace Gestion_Casos
 
         private void BtnAMenuHam_Click(object sender, EventArgs e)
         {
-            SlideBar.Start();
+            if (SideBarExpand)
+            {
+                Menu.Width = 90;
+                //SideBarExpand = false;
+                //SlideBar.Stop();
+                //if (Menu.Width <= 85)
+                //{
+
+
+                //}
+            }
+            else
+            {
+                Menu.Width = 290;
+                //SideBarExpand = true;
+                //SlideBar.Stop();
+                ShowButtonText();
+                //if (Menu.Width >= 290)
+                //{
+
+                //}
+            }
             HideButtonText();
         }
 

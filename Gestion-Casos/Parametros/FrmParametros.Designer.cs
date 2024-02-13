@@ -1,4 +1,7 @@
-﻿namespace Gestion_Casos.Parametros
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace Gestion_Casos.Parametros
 {
     partial class FrmParametros
     {
@@ -66,7 +69,7 @@
             BarraMenu.Name = "BarraMenu";
             BarraMenu.Padding = new Padding(15, 5, 0, 5);
             BarraMenu.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            BarraMenu.Size = new Size(1074, 50);
+            BarraMenu.Size = new Size(1614, 50);
             BarraMenu.TabIndex = 0;
             // 
             // Espaciador2
@@ -173,7 +176,7 @@
             PanelContenedor2.Location = new Point(0, 50);
             PanelContenedor2.Name = "PanelContenedor2";
             PanelContenedor2.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            PanelContenedor2.Size = new Size(1074, 619);
+            PanelContenedor2.Size = new Size(1614, 942);
             PanelContenedor2.TabIndex = 1;
             // 
             // FrmParametros
@@ -181,7 +184,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(41, 79, 116);
-            ClientSize = new Size(1074, 669);
+            ClientSize = new Size(1614, 992);
             Controls.Add(PanelContenedor2);
             Controls.Add(BarraMenu);
             FormBorderStyle = FormBorderStyle.None;

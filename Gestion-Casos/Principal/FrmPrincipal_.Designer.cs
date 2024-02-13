@@ -1,4 +1,7 @@
-﻿namespace Gestion_Casos.Principal
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace Gestion_Casos.Principal
 {
     partial class FrmPrincipal_
     {
@@ -153,7 +156,7 @@
             PanelPrincipal.Name = "PanelPrincipal";
             PanelPrincipal.Padding = new Padding(0, 0, 0, 4);
             PanelPrincipal.ShadowDecoration.CustomizableEdges = customizableEdges58;
-            PanelPrincipal.Size = new Size(1366, 716);
+            PanelPrincipal.Size = new Size(1904, 1041);
             PanelPrincipal.TabIndex = 0;
             // 
             // PanelContenedor
@@ -168,14 +171,14 @@
             PanelContenedor.Radius = 10;
             PanelContenedor.ShadowColor = Color.FromArgb(41, 79, 116);
             PanelContenedor.ShadowShift = 3;
-            PanelContenedor.Size = new Size(1076, 667);
+            PanelContenedor.Size = new Size(1614, 992);
             PanelContenedor.TabIndex = 16;
             // 
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.None;
             pictureBox1.Image = Properties.Resources.Untitled;
-            pictureBox1.Location = new Point(176, 120);
+            pictureBox1.Location = new Point(445, 283);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(730, 422);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -210,7 +213,7 @@
             Menu.Radius = 10;
             Menu.ShadowColor = Color.FromArgb(54, 54, 54);
             Menu.ShadowShift = 3;
-            Menu.Size = new Size(290, 667);
+            Menu.Size = new Size(290, 992);
             Menu.TabIndex = 15;
             // 
             // SubMenu8
@@ -733,7 +736,7 @@
             BarraTitulo.Location = new Point(0, 0);
             BarraTitulo.Name = "BarraTitulo";
             BarraTitulo.Padding = new Padding(2, 0, 2, 2);
-            BarraTitulo.Size = new Size(1366, 45);
+            BarraTitulo.Size = new Size(1904, 45);
             BarraTitulo.TabIndex = 1;
             BarraTitulo.MouseDown += BarraTitulo_MouseDown;
             // 
@@ -798,7 +801,7 @@
             PanelUsuario.Controls.Add(FotoPerfil);
             PanelUsuario.Controls.Add(tableLayoutPanel1);
             PanelUsuario.Dock = DockStyle.Right;
-            PanelUsuario.Location = new Point(906, 0);
+            PanelUsuario.Location = new Point(1444, 0);
             PanelUsuario.Name = "PanelUsuario";
             PanelUsuario.Padding = new Padding(0, 4, 15, 1);
             PanelUsuario.Size = new Size(338, 43);
@@ -877,7 +880,7 @@
             BtnMinimizar.Image = Properties.Resources.minimizar_signo;
             BtnMinimizar.ImageOffset = new Point(1, 0);
             BtnMinimizar.ImageSize = new Size(15, 15);
-            BtnMinimizar.Location = new Point(1244, 0);
+            BtnMinimizar.Location = new Point(1782, 0);
             BtnMinimizar.Name = "BtnMinimizar";
             BtnMinimizar.PressedColor = Color.Empty;
             BtnMinimizar.ShadowDecoration.CustomizableEdges = customizableEdges52;
@@ -908,7 +911,7 @@
             BtnMaximizar.Image = Properties.Resources.maximizar1;
             BtnMaximizar.ImageOffset = new Point(1, 0);
             BtnMaximizar.ImageSize = new Size(15, 15);
-            BtnMaximizar.Location = new Point(1284, 0);
+            BtnMaximizar.Location = new Point(1822, 0);
             BtnMaximizar.Name = "BtnMaximizar";
             BtnMaximizar.PressedColor = Color.Empty;
             BtnMaximizar.ShadowDecoration.CustomizableEdges = customizableEdges54;
@@ -939,7 +942,7 @@
             BtnClose.Image = Properties.Resources.cerrar_24px_white;
             BtnClose.ImageOffset = new Point(1, 0);
             BtnClose.ImageSize = new Size(15, 15);
-            BtnClose.Location = new Point(1324, 0);
+            BtnClose.Location = new Point(1862, 0);
             BtnClose.Name = "BtnClose";
             BtnClose.PressedColor = Color.Empty;
             BtnClose.ShadowDecoration.CustomizableEdges = customizableEdges56;
@@ -957,11 +960,12 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(33, 36, 41);
-            ClientSize = new Size(1366, 716);
+            ClientSize = new Size(1904, 1041);
             Controls.Add(PanelPrincipal);
             MinimumSize = new Size(1364, 716);
             Name = "FrmPrincipal_";
             Text = "FrmPrincipal";
+            WindowState = FormWindowState.Maximized;
             Load += FrmPrincipal__Load;
             Resize += FrmPrincipal__Resize;
             PanelPrincipal.ResumeLayout(false);
